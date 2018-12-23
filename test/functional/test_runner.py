@@ -172,6 +172,7 @@ BASE_SCRIPTS= [
     'rpc_uptime.py',
     'rpc_assettransfer.py',
     'feature_loadblock.py',
+    'wallet_create_tx.py',
     'p2p_leak_tx.py'
     # Don't append tests at the end to avoid merge conflicts
     # Put them in a random line within the section that fits their approximate run-time
