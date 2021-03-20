@@ -412,7 +412,7 @@ OverviewPage::OverviewPage(const PlatformStyle *platformStyle, QWidget *parent) 
     showAssets();
 
     // context menu actions
-    sendAction = new QAction(tr("Send Asset"), this);
+    sendAction = new QAction(tr("Transfer Asset"), this);
     QAction *copyAmountAction = new QAction(tr("Copy Amount"), this);
     QAction *copyNameAction = new QAction(tr("Copy Name"), this);
     issueSub = new QAction(tr("Issue Sub Asset"), this);

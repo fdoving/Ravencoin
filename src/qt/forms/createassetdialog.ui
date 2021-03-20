@@ -644,7 +644,7 @@
             <item>
              <widget class="QLineEdit" name="nameText">
               <property name="toolTip">
-               <string>A-Z 0-9 and . or _ as the second character</string>
+               <string>A-Z 0-9 and . or _</string>
               </property>
               <property name="maxLength">
                <number>30</number>
