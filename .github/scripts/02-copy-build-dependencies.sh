@@ -3,7 +3,7 @@
 OS=${1}
 GITHUB_WORKSPACE=${2}
 GITHUB_REF=${3}
-FORCEBUILD=1
+FORCEBUILD="1"
 
 # try to disable this
 exit 0 
@@ -23,7 +23,7 @@ if [[ ${OS} == "arm32v7-disable-wallet" || ${OS} == "linux-disable-wallet" ]]; t
 fi
 
 # if [[ ${GITHUB_REF} =~ "release" ]]; then
-if [[ ${GITHUB_REF} =~ "release" || ${FORCEBUIILD} = "1" ]]; then
+if [[ ${GITHUB_REF} =~ "release" || ${FORCEBUILD} = "1" ]]; then
     echo "----------------------------------------"
     echo "Building Dependencies for ${OS}"
     echo "----------------------------------------"
