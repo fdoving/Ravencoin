@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        OS: [ 'linux', 'linux-disable-wallet' ]
+        OS: [ 'linux', 'linux-disable-wallet', 'windows' ]
 
     steps:
     - name: Checkout the Code

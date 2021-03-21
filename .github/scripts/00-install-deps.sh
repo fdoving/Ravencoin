@@ -34,7 +34,19 @@ if [[ ${OS} == "windows" ]]; then
     pkg-config \
     python \
     rename \
-    zip
+    zip \
+    libdb4.8-dev \
+    libdb4.8++-dev \
+    libminiupnpc-dev \
+    libzmq3-dev \
+    libboost-all-dev \
+    libqt5gui5 \
+    libqt5core5a \
+    libqt5dbus5 \
+    qttools5-dev \
+    qttools5-dev-tools \
+    libprotobuf-dev \
+    protobuf-compiler
 
     update-alternatives --set x86_64-w64-mingw32-g++ /usr/bin/x86_64-w64-mingw32-g++-posix
 
@@ -64,6 +76,7 @@ elif [[ ${OS} == "osx" ]]; then
     python-setuptools \
     s3curl \
     sleuthkit
+
 elif [[ ${OS} == "linux" || ${OS} == "linux-disable-wallet" ]]; then
     apt -y install \
     apt-file \
@@ -91,7 +104,20 @@ elif [[ ${OS} == "linux" || ${OS} == "linux-disable-wallet" ]]; then
     rename \
     ubuntu-dev-tools \
     xkb-data \
-    zip
+    zip \
+    libdb4.8-dev \
+    libdb4.8++-dev \
+    libminiupnpc-dev \
+    libzmq3-dev \
+    libboost-all-dev \
+    libqt5gui5 \
+    libqt5core5a \
+    libqt5dbus5 \
+    qttools5-dev \
+    qttools5-dev-tools \
+    libprotobuf-dev \
+    protobuf-compiler
+
 elif [[ ${OS} == "arm32v7" || ${OS} == "arm32v7-disable-wallet" ]]; then
     apt -y install \
     autoconf \
