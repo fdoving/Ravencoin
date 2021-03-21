@@ -5,10 +5,6 @@ GITHUB_WORKSPACE=${2}
 GITHUB_REF=${3}
 FORCEBUILD="1"
 
-# try to disable this
-exit 0 
-
-
 if [[ ! ${OS} || ! ${GITHUB_WORKSPACE} ]]; then
     echo "Error: Invalid options"
     echo "Usage: ${0} <operating system> <github workspace path>"
