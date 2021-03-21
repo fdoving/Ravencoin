@@ -1,16 +1,16 @@
 name: Dependencies - Mac OS X
 
 on:
-  pull_request:
-    branches:
-      - master
-    paths:
-      - 'depends/**'
-  push:
-    branches:
-      - master
-    paths:
-      - 'depends/**'
+#  pull_request:
+#    branches:
+#      - master
+#    paths:
+#      - 'depends/**'
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - 'depends/**'
 
 env:
   OS: osx
