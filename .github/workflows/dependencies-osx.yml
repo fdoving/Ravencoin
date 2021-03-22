@@ -3,7 +3,7 @@ name: Dependencies - Mac OS X
 on:
   pull_request:
     branches:
-      - master
+      - develop
     paths:
       - 'depends/**'
   push:

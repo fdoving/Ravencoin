@@ -13,9 +13,6 @@ echo "Installing Build Packages for ${OS}"
 echo "----------------------------------------"
 
 apt-get update
-apt-get install -y software-properties-common
-add-apt-repository ppa:bitcoin/bitcoin
-apt-get update
 
 if [[ ${OS} == "windows" ]]; then
     apt-get install -y \
@@ -77,10 +74,10 @@ elif [[ ${OS} == "linux" || ${OS} == "linux-disable-wallet" ]]; then
     ca-certificates \
     curl \
     g++-aarch64-linux-gnu \
-    g++-7-aarch64-linux-gnu \
-    g++-7-multilib \
-    gcc-7-aarch64-linux-gnu \
-    gcc-7-multilib \
+    g++-9-aarch64-linux-gnu \
+    g++-9-multilib \
+    gcc-9-aarch64-linux-gnu \
+    gcc-9-multilib \
     git \
     gnupg \
     libtool \
@@ -103,13 +100,13 @@ elif [[ ${OS} == "arm32v7" || ${OS} == "arm32v7-disable-wallet" ]]; then
     ca-certificates \
     curl \
     g++-aarch64-linux-gnu \
-    g++-7-aarch64-linux-gnu \
-    gcc-7-aarch64-linux-gnu \
+    g++-9-aarch64-linux-gnu \
+    gcc-9-aarch64-linux-gnu \
     g++-arm-linux-gnueabihf \
-    g++-7-arm-linux-gnueabihf \
-    gcc-7-arm-linux-gnueabihf \
-    g++-7-multilib \
-    gcc-7-multilib \
+    g++-9-arm-linux-gnueabihf \
+    gcc-9-arm-linux-gnueabihf \
+    g++-9-multilib \
+    gcc-9-multilib \
     git \
     libtool \
     pkg-config \
