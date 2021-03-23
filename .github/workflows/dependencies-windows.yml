@@ -3,7 +3,7 @@ name: Dependencies - Windows
 on:
   pull_request:
     branches:
-      - master
+      - depends
     paths:
       - 'depends/**'
   push:
