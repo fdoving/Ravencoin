@@ -3,6 +3,7 @@
 OS=${1}
 GITHUB_WORKSPACE=${2}
 GITHUB_REF=${3}
+FORCEBUILDDEPS="1"
 
 if [[ ! ${OS} || ! ${GITHUB_WORKSPACE} ]]; then
     echo "Error: Invalid options"
@@ -17,7 +18,7 @@ if [[ ${OS} == "arm32v7-disable-wallet" || ${OS} == "linux-disable-wallet" ]]; t
     OS=`echo ${OS} | cut -d"-" -f1`
 fi
 
-if [[ ${GITHUB_REF} =~ "release" ]]; then
+if [[ ${GITHUB_REF} =~ "release" || ${FORCEBUILDDEPS} = "1" ]]; then
     echo "----------------------------------------"
     echo "Building Dependencies for ${OS}"
     echo "----------------------------------------"
@@ -27,7 +28,7 @@ if [[ ${GITHUB_REF} =~ "release" ]]; then
         make HOST=x86_64-w64-mingw32 -j2
     elif [[ ${OS} == "osx" ]]; then
         cd ${GITHUB_WORKSPACE}
-        curl -O https://raven-build-resources.s3.amazonaws.com/osx/MacOSX10.11.sdk.tar.gz
+        curl -O https://raw.githubusercontent.com/shannon1916/MacOSX10.11.sdk.tar.gz/master/MacOSX10.11.sdk.tar.gz
         mkdir -p ${GITHUB_WORKSPACE}/depends/SDKs
         cd ${GITHUB_WORKSPACE}/depends/SDKs && tar -zxf ${GITHUB_WORKSPACE}/MacOSX10.11.sdk.tar.gz
         cd ${GITHUB_WORKSPACE}/depends && make HOST=x86_64-apple-darwin14 -j2
