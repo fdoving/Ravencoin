@@ -80,7 +80,7 @@ void OptionsModel::Init(bool resetSettings)
     strThirdPartyTxUrls = settings.value("strThirdPartyTxUrls", "").toString();
 
     if (!settings.contains("strIpfsUrl"))
-        settings.setValue("strIpfsUrl", "https://ipfs.io/ipfs/");
+        settings.setValue("strIpfsUrl", "https://ipfs.io/ipfs/%s");
     strIpfsUrl = settings.value("strIpfsUrl", "").toString();
 
     if (!settings.contains("fCoinControlFeatures"))

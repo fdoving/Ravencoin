@@ -638,7 +638,7 @@
          <item>
           <widget class="QLabel" name="ipfsUrlLabel">
            <property name="toolTip">
-            <string>Third party URL for IPFS-viewers</string>
+            <string>Third party URL for IPFS-viewer. %s in the URL is replaced with the hash.</string>
            </property>
            <property name="text">
             <string>IPFS Viewer URL</string>
@@ -648,7 +648,7 @@
          <item>
           <widget class="QLineEdit" name="ipfsUrl">
            <property name="toolTip">
-            <string>Third party URL for IPFS-viewers</string>
+            <string>Third party URL for IPFS-viewer. %s in the URL is replaced with the hash.</string>
            </property>
           </widget>
          </item>
