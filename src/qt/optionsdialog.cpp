@@ -109,6 +109,7 @@ OptionsDialog::OptionsDialog(QWidget *parent, bool enableWallet) :
     }
 #if QT_VERSION >= 0x040700
     ui->thirdPartyTxUrls->setPlaceholderText("https://example.com/tx/%s");
+    ui->ipfsUrl->setPlaceholderText("https://ipfs.io/ipfs/");
 #endif
 
     ui->unit->setModel(new RavenUnits(this));
@@ -168,6 +169,7 @@ void OptionsDialog::setModel(OptionsModel *_model)
     /* Display */
     connect(ui->lang, SIGNAL(valueChanged()), this, SLOT(showRestartWarning()));
     connect(ui->thirdPartyTxUrls, SIGNAL(textChanged(const QString &)), this, SLOT(showRestartWarning()));
+    connect(ui->ipfsUrl, SIGNAL(textChanged(const QString &)), this, SLOT(showRestartWarning()));
     connect(ui->darkModeCheckBox, SIGNAL(clicked(bool)), this, SLOT(showRestartWarning()));
 }
 
@@ -207,6 +209,7 @@ void OptionsDialog::setMapper()
     mapper->addMapping(ui->lang, OptionsModel::Language);
     mapper->addMapping(ui->unit, OptionsModel::DisplayUnit);
     mapper->addMapping(ui->thirdPartyTxUrls, OptionsModel::ThirdPartyTxUrls);
+    mapper->addMapping(ui->ipfsUrl, OptionsModel::IpfsUrl);
 }
 
 void OptionsDialog::setOkButtonState(bool fState)
