@@ -76,7 +76,7 @@ void OptionsModel::Init(bool resetSettings)
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
-        settings.setValue("strThirdPartyTxUrls", "");
+        settings.setValue("strThirdPartyTxUrls", "https://rvn.cryptoscope.io/tx/?txid=%s|https://api.ravencoin.org/tx/%s|https://explorer.ravenland.org/tx/%s");
     strThirdPartyTxUrls = settings.value("strThirdPartyTxUrls", "").toString();
 
     if (!settings.contains("strIpfsUrl"))
