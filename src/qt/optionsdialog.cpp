@@ -259,7 +259,7 @@ void OptionsDialog::on_cancelButton_clicked()
 void OptionsDialog::on_thirdPartyTxUrlsReset_clicked()
 {
     // reset thirdPartyTxUrls to default
-    ui->thirdPartyTxUrls->setText("https://rvn.cryptoscope.io/tx/?txid=%s|https://api.ravencoin.org/tx/%s|https://explorer.ravenland.org/tx/%s|https://explorer.mangofarmassets.com/tx/%s|https://blockbook.ravencoin.org/tx/%s")
+    ui->thirdPartyTxUrls->setText("https://rvn.cryptoscope.io/tx/?txid=%s|https://api.ravencoin.org/tx/%s|https://explorer.ravenland.org/tx/%s|https://explorer.mangofarmassets.com/tx/%s|https://blockbook.ravencoin.org/tx/%s");
 }
 
 void OptionsDialog::on_hideTrayIcon_stateChanged(int fState)
