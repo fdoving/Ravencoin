@@ -634,7 +634,7 @@
         </layout>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_4_Display" stretch="0,0">
+        <layout class="QHBoxLayout" name="horizontalLayout_4_Display" stretch="0,0,0">
          <item>
           <widget class="QLabel" name="ipfsUrlLabel">
            <property name="toolTip">
@@ -649,6 +649,13 @@
           <widget class="QLineEdit" name="ipfsUrl">
            <property name="toolTip">
             <string>Third party URL for IPFS-viewer. %s in the URL is replaced by IPFS hash.</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="ipfsUrlReset">
+           <property name="text">
+            <string>Reset</string>
            </property>
           </widget>
          </item>

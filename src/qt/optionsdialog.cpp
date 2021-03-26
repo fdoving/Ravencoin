@@ -235,6 +235,12 @@ void OptionsDialog::on_resetButton_clicked()
     }
 }
 
+void OptionsDialog::on_ipfsUrlReset_clicked()
+{
+    /* reset third-party IPFS viewer URL to default setting. */
+    ui->ipfsUrl->setText("https://ipfs.io/ipfs/%s");
+}
+
 void OptionsDialog::on_openRavenConfButton_clicked()
 {
     /* explain the purpose of the config file */
