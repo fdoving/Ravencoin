@@ -109,7 +109,7 @@ OptionsDialog::OptionsDialog(QWidget *parent, bool enableWallet) :
     }
 #if QT_VERSION >= 0x040700
     ui->thirdPartyTxUrls->setPlaceholderText("https://example.com/tx/%s");
-    ui->ipfsUrl->setPlaceholderText("https://ipfs.io/ipfs/");
+    ui->ipfsUrl->setPlaceholderText("https://ipfs.io/ipfs/%s");
 #endif
 
     ui->unit->setModel(new RavenUnits(this));
