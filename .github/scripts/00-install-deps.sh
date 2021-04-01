@@ -34,7 +34,8 @@ if [[ ${OS} == "windows" ]]; then
     pkg-config \
     python \
     rename \
-    zip
+    zip \
+    bison
 
     update-alternatives --set x86_64-w64-mingw32-g++ /usr/bin/x86_64-w64-mingw32-g++-posix
 
@@ -63,7 +64,8 @@ elif [[ ${OS} == "osx" ]]; then
     python-dev \
     python-setuptools \
     s3curl \
-    sleuthkit
+    sleuthkit \
+    bison
 elif [[ ${OS} == "linux" || ${OS} == "linux-disable-wallet" ]]; then
     apt -y install \
     apt-file \
@@ -91,7 +93,8 @@ elif [[ ${OS} == "linux" || ${OS} == "linux-disable-wallet" ]]; then
     rename \
     ubuntu-dev-tools \
     xkb-data \
-    zip
+    zip \
+    bison
 elif [[ ${OS} == "arm32v7" || ${OS} == "arm32v7-disable-wallet" ]]; then
     apt -y install \
     autoconf \
@@ -113,7 +116,8 @@ elif [[ ${OS} == "arm32v7" || ${OS} == "arm32v7-disable-wallet" ]]; then
     git \
     libtool \
     pkg-config \
-    python
+    python \
+    bison
 else
     echo "you must pass the OS to build for"
     exit 1
