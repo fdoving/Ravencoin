@@ -56,11 +56,11 @@ define $(package)_config_cmds
 endef
 
 define $(package)_build_cmds
-  $(MAKE) -j1 build_libs libcrypto.pc libssl.pc openssl.pc
+  $(MAKE) -j1
 endef
 
 define $(package)_stage_cmds
-  $(MAKE) INSTALL_PREFIX=$($(package)_staging_dir) -j1 install_sw
+  $(MAKE) -j1 install_sw
 endef
 
 define $(package)_postprocess_cmds
