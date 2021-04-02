@@ -47,7 +47,7 @@ $(package)_config_opts += -no-linuxfb
 $(package)_config_opts += -no-libjpeg
 $(package)_config_opts += -no-libudev
 $(package)_config_opts += -no-mtdev
-$(package)_config_opts += -openssl-runtime
+$(package)_config_opts += -openssl-linked
 $(package)_config_opts += -no-dtls
 $(package)_config_opts += -no-openvg
 $(package)_config_opts += -no-reduce-relocations
@@ -144,7 +144,6 @@ $(package)_config_opts_mingw32 = -no-opengl
 $(package)_config_opts_mingw32 += -no-dbus
 $(package)_config_opts_mingw32 += -xplatform win32-g++
 $(package)_config_opts_mingw32 += -device-option CROSS_COMPILE="$(host)-"
-$(package)_config_opts_mingw32 += -pch
 
 $(package)_config_opts_android = -xplatform android-clang
 $(package)_config_opts_android += -android-sdk $(ANDROID_SDK)
@@ -247,7 +246,8 @@ endef
 define $(package)_config_cmds
   export OPENSSL_PREFIX=$(host_prefix)/ && \
   export OPENSSL_INCDIR=$(host_prefix)/include/ && \
-  export OPENSSL_LIBS="-lssl -lcrypto" && \
+  export OPENSSL_LIBDIR=$(host_prefix)/lib/ && \
+  export OPENSSL_LIBS="-llibssl -llibcrypto" && \
   export PKG_CONFIG_SYSROOT_DIR=/ && \
   export PKG_CONFIG_LIBDIR=$(host_prefix)/lib/pkgconfig && \
   export PKG_CONFIG_PATH=$(host_prefix)/share/pkgconfig  && \
