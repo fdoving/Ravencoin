@@ -245,6 +245,9 @@ define $(package)_preprocess_cmds
 endef
 
 define $(package)_config_cmds
+  export OPENSSL_PREFIX=$(host_prefix)/ && \
+  export OPENSSL_INCDIR=$(host_prefix)/include/ && \
+  export OPENSSL_LIBS="-lssl -lcrypto" && \
   export PKG_CONFIG_SYSROOT_DIR=/ && \
   export PKG_CONFIG_LIBDIR=$(host_prefix)/lib/pkgconfig && \
   export PKG_CONFIG_PATH=$(host_prefix)/share/pkgconfig  && \
