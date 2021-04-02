@@ -38,7 +38,8 @@ if [[ ${OS} == "windows" ]]; then
     zip \
     bison
 
-    update-alternatives --set x86_64-w64-mingw32-g++ /usr/bin/x86_64-w64-mingw32-g++-posix
+    update-alternatives --set x86_64-w64-mingw32-g++ /usr/bin/x86_64-w64-mingw32-g++-posix 
+    ln -s /usr/bin/x86_64-w64-mingw32-windres /usr/bin/windres
 
 elif [[ ${OS} == "osx" ]]; then
     apt -y install \
