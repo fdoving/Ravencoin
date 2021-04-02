@@ -26,6 +26,7 @@ if [[ ${OS} == "windows" ]]; then
     curl \
     g++-mingw-w64-x86-64 \
     binutils-mingw-w64-x86-64 \
+    mingw-w64-x86-64-dev \
     git \
     libcurl4-openssl-dev \
     libssl-dev \
