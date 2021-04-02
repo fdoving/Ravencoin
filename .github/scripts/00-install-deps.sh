@@ -25,6 +25,7 @@ if [[ ${OS} == "windows" ]]; then
     build-essential \
     curl \
     g++-mingw-w64-x86-64 \
+    binutils-mingw-w64-x86-64 \
     git \
     libcurl4-openssl-dev \
     libssl-dev \
