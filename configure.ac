@@ -357,7 +357,7 @@ case $host in
        AC_MSG_WARN("makensis not found. Cannot create installer.")
      fi
 
-     AC_PATH_TOOL(WINDRES, windres, none)
+     AC_PATH_TOOL(WINDRES,x86_64-w64-mingw32-windres , none)
      if test x$WINDRES = xnone; then
        AC_MSG_ERROR("windres not found")
      fi
