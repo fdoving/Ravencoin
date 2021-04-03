@@ -131,10 +131,11 @@ $(package)_config_opts_linux += -fontconfig
 $(package)_config_opts_linux += -no-opengl
 $(package)_config_opts_linux += -no-feature-vulkan
 $(package)_config_opts_linux += -dbus-runtime
-$(package)_config_opts_arm_linux += OPENSSL_LIBS="-lssl -lcrypto -pthread -ldl"
+$(package)_config_opts_arm_linux = OPENSSL_LIBS="-lssl -lcrypto -pthread -ldl"
 $(package)_config_opts_arm_linux += -platform linux-g++ -xplatform bitcoin-linux-g++
 $(package)_config_opts_i686_linux  = -xplatform linux-g++-32
-$(package)_config_opts_x86_64_linux = -xplatform linux-g++-64
+$(package)_config_opts_x86_64_linux = OPENSSL_LIBS="-lssl -lcrypto -pthread -ldl"
+$(package)_config_opts_x86_64_linux += -xplatform linux-g++-64
 $(package)_config_opts_aarch64_linux = -xplatform linux-aarch64-gnu-g++
 $(package)_config_opts_powerpc64_linux = -platform linux-g++ -xplatform bitcoin-linux-g++
 $(package)_config_opts_powerpc64le_linux = -platform linux-g++ -xplatform bitcoin-linux-g++
@@ -249,7 +250,7 @@ define $(package)_config_cmds
   export OPENSSL_PREFIX=$(host_prefix)/ && \
   export OPENSSL_INCDIR=$(host_prefix)/include/ && \
   export OPENSSL_LIBDIR=$(host_prefix)/lib/ && \
-  export OPENSSL_LIBS="-llibssl -llibcrypto" && \
+  export OPENSSL_LIBS="-llibssl -llibcrypto -lpthread" && \
   export PKG_CONFIG_SYSROOT_DIR=/ && \
   export PKG_CONFIG_LIBDIR=$(host_prefix)/lib/pkgconfig && \
   export PKG_CONFIG_PATH=$(host_prefix)/share/pkgconfig  && \
