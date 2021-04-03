@@ -13,9 +13,6 @@ echo "Installing Build Packages for ${OS}"
 echo "----------------------------------------"
 
 apt-get update
-apt-get install -y software-properties-common
-add-apt-repository ppa:bitcoin/bitcoin
-apt-get update
 
 if [[ ${OS} == "windows" ]]; then
     apt-get install -y \
