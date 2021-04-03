@@ -5,7 +5,6 @@ $(package)_file_name=$(package)-$($(package)_version).tar.gz
 $(package)_sha256_hash=892a0875b9872acd04a9fde79b1f943075d5ea162415de3047c327df33fbaee5
 
 define $(package)_set_vars
-$(package)_config_env=AR="$($(package)_ar)" RANLIB="$($(package)_ranlib)" CC="$($(package)_cc)"
 $(package)_config_opts=--prefix=$(host_prefix) --openssldir=$(host_prefix)/etc/openssl
 $(package)_config_opts+=no-camellia
 $(package)_config_opts+=no-capieng
@@ -44,8 +43,8 @@ $(package)_config_opts_mipsel_linux=linux-generic32
 $(package)_config_opts_mips_linux=linux-generic32
 $(package)_config_opts_powerpc_linux=linux-generic32
 $(package)_config_opts_x86_64_darwin=darwin64-x86_64-cc
-$(package)_config_opts_x86_64_mingw32=--cross-compile-prefix=x86_64-w64- mingw64
-$(package)_config_opts_i686_mingw32=--cross-compile-prefix=i686-w64- mingw32
+$(package)_config_opts_x86_64_mingw32=--cross-compile-prefix=x86_64-w64-mingw32- mingw64
+$(package)_config_opts_i686_mingw32=--cross-compile-prefix=i686-w64-mingw32- mingw32
 endef
 
 define $(package)_preprocess_cmds
