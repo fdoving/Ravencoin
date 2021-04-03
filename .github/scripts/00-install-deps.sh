@@ -21,8 +21,7 @@ if [[ ${OS} == "windows" ]]; then
     bsdmainutils \
     build-essential \
     curl \
-    g++-mingw-w64-x86-64 \
-    binutils-mingw-w64-x86-64 \
+    mingw-w64 \
     mingw-w64-x86-64-dev \
     git \
     libcurl4-openssl-dev \
@@ -73,7 +72,7 @@ elif [[ ${OS} == "linux" || ${OS} == "linux-disable-wallet" ]]; then
     automake \
     autotools-dev \
     binutils-aarch64-linux-gnu \
-    binutils-gold \
+    binutils \
     bsdmainutils \
     build-essential \
     ca-certificates \
@@ -101,7 +100,7 @@ elif [[ ${OS} == "arm32v7" || ${OS} == "arm32v7-disable-wallet" ]]; then
     automake \
     binutils-aarch64-linux-gnu \
     binutils-arm-linux-gnueabihf \
-    binutils-gold \
+    binutils \
     bsdmainutils \
     ca-certificates \
     curl \
