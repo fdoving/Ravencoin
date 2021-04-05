@@ -41,6 +41,7 @@ if [[ ${GITHUB_REF} =~ "release" || ${FORCEBUILDDEPS} = "1" ]]; then
         sleep 1
         echo "0.. continuing.."
         mkdir -p ${GITHUB_WORKSPACE}/depends/SDKs 
+        cd  ${GITHUB_WORKSPACE}/depends/SDKs
         tar -zxf /tmp/SDKs/*.tar.gz
         cd ${GITHUB_WORKSPACE}/depends && make HOST=x86_64-apple-darwin14 -j2
     elif [[ ${OS} == "linux" || ${OS} == "linux-disable-wallet" ]]; then
