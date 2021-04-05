@@ -32,7 +32,6 @@ if [[ ${GITHUB_REF} =~ "release" || ${FORCEBUILDDEPS} = "1" ]]; then
         echo "LEGAL issues with OSX SDK, need to get it yourself and extract the valuable stuff."
         echo "See github -> contrib/macdeploy/README.md"
         echo "Countdown from 3 sec. Make sure your SDK is at /tmp/SDKs and it is the only *.tar.gz file."
-        sleep 3
         echo "3..."
         sleep 1
         echo "2..."
