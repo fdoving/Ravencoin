@@ -58,8 +58,6 @@ define $(package)_preprocess_cmds
 endef
 
 define $(package)_config_cmds
-ifneq (,$(findstring darwin,$(host_os)))
- ifneq ($(build_os),darwin)
   CC="$($(package)_cc)" \
   CXXFLAGS="$($(package)_ccflags)" \
   RANLIB="$(host_prefix)/native/bin/x86_64-apple-darwin14-ranlib" \
@@ -67,11 +65,6 @@ ifneq (,$(findstring darwin,$(host_os)))
   AS="$(host_prefix)/native/bin/x86_64-apple-darwin14-as" \
   ./Configure $($(package)_config_opts) && \
   sed -i.old 's/INSTALL_PROGRAMS=apps\/openssl/INSTALL_PROGRAMS=/g' Makefile
- endif
- else
-./Configure $($(package)_config_opts) 
-endif
-
 endef
 
 define $(package)_build_cmds
@@ -83,5 +76,10 @@ define $(package)_stage_cmds
 endef
 
 define $(package)_postprocess_cmds
-  rm -rf share bin etc
+  rm -rf share bin etc && \
+  unset CC && \
+  unset CCXFLAGS && \
+  unset RANLIB && \
+  unset AR && \
+  unset AS
 endef
