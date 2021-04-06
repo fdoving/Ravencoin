@@ -68,6 +68,7 @@ define $(package)_config_cmds
 endef
 
 define $(package)_build_cmds
+  /bin/echo $(AR) && \
   $(MAKE) -j1 build_libs
 endef
 

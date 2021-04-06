@@ -1,3 +1,16 @@
+# shellcheck shell=sh disable=SC2034 # Many variables set will be used in
+                                     # ./configure but shellcheck doesn't know
+                                     # that, hence: disable=SC2034
+
+true  # Dummy command because shellcheck treats all directives before first
+      # command as file-wide, and we only want to disable for one line.
+      #
+      # See: https://github.com/koalaman/shellcheck/wiki/Directive
+
+# shellcheck disable=SC2154
+
+
+
 depends_prefix="$(cd "$(dirname "$ac_site_file")/.." && pwd)"
 
 
@@ -68,20 +81,20 @@ OBJC="${CC}"
 CCACHE=$depends_prefix/native/bin/ccache
 PYTHONPATH=$depends_prefix/native/lib/python/dist-packages:$PYTHONPATH
 
-if test -n "@AR@"; then
-  AR=@AR@
-  ac_cv_path_ac_pt_AR=${AR}
-fi
+#if test -n "@AR@"; then
+#  AR=@AR@
+#  ac_cv_path_ac_pt_AR=${AR}
+#fi
 
-if test -n "@RANLIB@"; then
-  RANLIB=@RANLIB@
-  ac_cv_path_ac_pt_RANLIB=${RANLIB}
-fi
+#if test -n "@RANLIB@"; then
+#  RANLIB=@RANLIB@
+#  ac_cv_path_ac_pt_RANLIB=${RANLIB}
+#fi
 
-if test -n "@NM@"; then
-  NM=@NM@
-  ac_cv_path_ac_pt_NM=${NM}
-fi
+#if test -n "@NM@"; then
+#  NM=@NM@
+#  ac_cv_path_ac_pt_NM=${NM}
+#fi
 
 if test -n "@debug@"; then
   enable_reduce_exports=no
