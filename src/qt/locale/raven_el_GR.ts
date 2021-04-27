@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="el_GR">
+<TS language="el_GR" version="2.1">
 <context>
     <name>AddressBookPage</name>
     <message>
@@ -139,264 +137,19 @@
     </message>
     </context>
 <context>
-    <name>BanTableModel</name>
+    <name>AssetControlDialog</name>
     </context>
 <context>
-    <name>RavenGUI</name>
-    <message>
-        <source>Sign &amp;message...</source>
-        <translation>Υπογραφή &amp;Μηνύματος...</translation>
-    </message>
-    <message>
-        <source>Synchronizing with network...</source>
-        <translation>Συγχρονισμός με το δίκτυο...</translation>
-    </message>
-    <message>
-        <source>&amp;Overview</source>
-        <translation>&amp;Επισκόπηση</translation>
-    </message>
-    <message>
-        <source>Node</source>
-        <translation>Κόμβος</translation>
-    </message>
-    <message>
-        <source>Show general overview of wallet</source>
-        <translation>Εμφάνισε τη γενική εικόνα του πορτοφολιού</translation>
-    </message>
-    <message>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Συναλλαγές</translation>
-    </message>
-    <message>
-        <source>Browse transaction history</source>
-        <translation>Περιήγηση στο ιστορικό συναλλαγών</translation>
-    </message>
-    <message>
-        <source>E&amp;xit</source>
-        <translation>Έ&amp;ξοδος</translation>
-    </message>
-    <message>
-        <source>Quit application</source>
-        <translation>Εξοδος από την εφαρμογή</translation>
-    </message>
-    <message>
-        <source>&amp;About %1</source>
-        <translation>&amp;Περί %1</translation>
-    </message>
-    <message>
-        <source>About &amp;Qt</source>
-        <translation>Σχετικά με &amp;Qt</translation>
-    </message>
-    <message>
-        <source>Show information about Qt</source>
-        <translation>Εμφάνισε πληροφορίες σχετικά με Qt</translation>
-    </message>
-    <message>
-        <source>&amp;Options...</source>
-        <translation>&amp;Επιλογές...</translation>
-    </message>
-    <message>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Κρυπτογράφησε το πορτοφόλι</translation>
-    </message>
-    <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Αντίγραφο ασφαλείας του πορτοφολιού</translation>
-    </message>
-    <message>
-        <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Άλλαξε κωδικο πρόσβασης</translation>
-    </message>
-    <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>Διευθύνσεις αποστολής</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>Διευθύνσεις λήψης</translation>
-    </message>
-    <message>
-        <source>Open &amp;URI...</source>
-        <translation>'Ανοιγμα &amp;URI</translation>
-    </message>
-    <message>
-        <source>Reindexing blocks on disk...</source>
-        <translation>Φόρτωση ευρετηρίου μπλοκ στον σκληρο δισκο...</translation>
-    </message>
-    <message>
-        <source>Send coins to a Raven address</source>
-        <translation>Στείλε νομίσματα σε μια διεύθυνση raven</translation>
-    </message>
-    <message>
-        <source>Backup wallet to another location</source>
-        <translation>Δημιουργία αντιγράφου ασφαλείας πορτοφολιού σε άλλη τοποθεσία</translation>
-    </message>
-    <message>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>Αλλαγή του κωδικού κρυπτογράφησης του πορτοφολιού</translation>
-    </message>
-    <message>
-        <source>&amp;Debug window</source>
-        <translation>&amp;Παράθυρο αποσφαλμάτωσης</translation>
-    </message>
-    <message>
-        <source>Open debugging and diagnostic console</source>
-        <translation>Άνοιγμα κονσόλας αποσφαλμάτωσης και διαγνωστικών</translation>
-    </message>
-    <message>
-        <source>&amp;Verify message...</source>
-        <translation>&amp;Επιβεβαίωση μηνύματος</translation>
-    </message>
-    <message>
-        <source>Raven</source>
-        <translation>Raven</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Πορτοφόλι</translation>
-    </message>
-    <message>
-        <source>&amp;Send</source>
-        <translation>&amp;Αποστολή</translation>
-    </message>
-    <message>
-        <source>&amp;Receive</source>
-        <translation>&amp;Παραλαβή </translation>
-    </message>
-    <message>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Εμφάνισε/Κρύψε</translation>
-    </message>
-    <message>
-        <source>Show or hide the main Window</source>
-        <translation>Εμφάνιση ή αποκρύψη του κεντρικου παράθυρου </translation>
-    </message>
-    <message>
-        <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Κρυπτογραφήστε τα ιδιωτικά κλειδιά που ανήκουν στο πορτοφόλι σας </translation>
-    </message>
-    <message>
-        <source>Sign messages with your Raven addresses to prove you own them</source>
-        <translation>Υπογράψτε ένα μήνυμα για να βεβαιώσετε πως είστε ο κάτοχος αυτής της διεύθυνσης</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Raven addresses</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση Raven</translation>
-    </message>
-    <message>
-        <source>&amp;File</source>
-        <translation>&amp;Αρχείο</translation>
-    </message>
-    <message>
-        <source>&amp;Settings</source>
-        <translation>&amp;Ρυθμίσεις</translation>
-    </message>
-    <message>
-        <source>&amp;Help</source>
-        <translation>&amp;Βοήθεια</translation>
-    </message>
-    <message>
-        <source>Tabs toolbar</source>
-        <translation>Εργαλειοθήκη καρτελών</translation>
-    </message>
-    <message>
-        <source>Request payments (generates QR codes and raven: URIs)</source>
-        <translation>Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις raven: )</translation>
-    </message>
-    <message>
-        <source>Show the list of used sending addresses and labels</source>
-        <translation>Προβολή της λίστας των χρησιμοποιημένων διευθύνσεων και ετικετών αποστολής</translation>
-    </message>
-    <message>
-        <source>Show the list of used receiving addresses and labels</source>
-        <translation>Προβολή της λίστας των χρησιμοποιημένων διευθύνσεων και ετικετών λήψεως</translation>
-    </message>
-    <message>
-        <source>Open a raven: URI or payment request</source>
-        <translation>Άνοιγμα raven: URI αίτησης πληρωμής</translation>
-    </message>
-    <message>
-        <source>&amp;Command-line options</source>
-        <translation>&amp;Επιλογές γραμμής εντολών</translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>%1 πίσω</translation>
-    </message>
-    <message>
-        <source>Last received block was generated %1 ago.</source>
-        <translation>Το τελευταίο μπλοκ που ελήφθη δημιουργήθηκε %1 πριν.</translation>
-    </message>
-    <message>
-        <source>Transactions after this will not yet be visible.</source>
-        <translation>Οι συναλλαγές μετά από αυτό δεν θα είναι ακόμη ορατες.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Σφάλμα</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Προειδοποίηση</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Πληροφορία</translation>
-    </message>
-    <message>
-        <source>Up to date</source>
-        <translation>Ενημερωμένο</translation>
-    </message>
-    <message>
-        <source>Catching up...</source>
-        <translation>Ενημέρωση...</translation>
-    </message>
-    <message>
-        <source>Date: %1
-</source>
-        <translation>Ημερομηνία: %1
-</translation>
-    </message>
-    <message>
-        <source>Amount: %1
-</source>
-        <translation>Ποσό: %1
-</translation>
-    </message>
-    <message>
-        <source>Type: %1
-</source>
-        <translation>Τύπος: %1
-</translation>
-    </message>
-    <message>
-        <source>Label: %1
-</source>
-        <translation>Ετικέτα: %1
-</translation>
-    </message>
-    <message>
-        <source>Address: %1
-</source>
-        <translation>Διεύθυνση: %1
-</translation>
-    </message>
-    <message>
-        <source>Sent transaction</source>
-        <translation>Η συναλλαγή απεστάλη</translation>
-    </message>
-    <message>
-        <source>Incoming transaction</source>
-        <translation>Εισερχόμενη συναλλαγή</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Το πορτοφόλι είναι &lt;b&gt;κρυπτογραφημένο&lt;/b&gt; και &lt;b&gt;ξεκλείδωτο&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Το πορτοφόλι είναι &lt;b&gt;κρυπτογραφημένο&lt;/b&gt; και &lt;b&gt;κλειδωμένο&lt;/b&gt;</translation>
-    </message>
+    <name>AssetTableModel</name>
+    </context>
+<context>
+    <name>AssetsDialog</name>
+    </context>
+<context>
+    <name>AssignQualifier</name>
+    </context>
+<context>
+    <name>BanTableModel</name>
     </context>
 <context>
     <name>CoinControlDialog</name>
@@ -490,6 +243,9 @@
     </message>
     </context>
 <context>
+    <name>CreateAssetDialog</name>
+    </context>
+<context>
     <name>EditAddressDialog</name>
     <message>
         <source>Edit Address</source>
@@ -548,6 +304,12 @@
     </message>
 </context>
 <context>
+    <name>FreezeAddress</name>
+    </context>
+<context>
+    <name>GUIUtil::SyncWarningMessage</name>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
@@ -592,15 +354,19 @@
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
-    <message numerus="yes">
-        <source>%n GB of free space available</source>
-        <translation><numerusform>%n GB ελεύθερου χώρου διαθέσιμα</numerusform><numerusform>%n GB ελεύθερου χώρου διαθέσιμα</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>(of %n GB needed)</source>
-        <translation><numerusform>(από το %n GB που απαιτείται)</numerusform><numerusform>(από τα %n GB που απαιτούνται)</numerusform></translation>
-    </message>
-</context>
+    </context>
+<context>
+    <name>MnemonicDialog</name>
+    </context>
+<context>
+    <name>MnemonicDialog1</name>
+    </context>
+<context>
+    <name>MnemonicDialog2</name>
+    </context>
+<context>
+    <name>MnemonicDialog3</name>
+    </context>
 <context>
     <name>ModalOverlay</name>
     <message>
@@ -615,6 +381,9 @@
         <source>Hide</source>
         <translation>Απόκρυψη</translation>
     </message>
+    </context>
+<context>
+    <name>MyRestrictedAssetsTableModel</name>
     </context>
 <context>
     <name>OpenURIDialog</name>
@@ -658,14 +427,6 @@
         <translation>Αριθμός script και γραμμές επαλήθευσης </translation>
     </message>
     <message>
-        <source>Accept connections from outside</source>
-        <translation>Αποδοχή συνδέσεων απο έξω</translation>
-    </message>
-    <message>
-        <source>Allow incoming connections</source>
-        <translation>Αποδοχή εισερχόμενων συναλλαγών</translation>
-    </message>
-    <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Διεύθυνση IP του διαμεσολαβητή (π.χ. 127.0.0.1  / IPv6: ::1)</translation>
     </message>
@@ -676,10 +437,6 @@
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>URLs από τρίτους (π.χ. ένας εξερευνητής μπλοκ) τα οποία εμφανίζονται στην καρτέλα συναλλαγών ως στοιχεία μενού. Το %s στα URL αντικαθιστάται από την τιμή της κατατεμαχισμένης συναλλαγής.</translation>
-    </message>
-    <message>
-        <source>Third party transaction URLs</source>
-        <translation>Διευθύνσεις τρίτων συναλλαγών.</translation>
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
@@ -858,10 +615,6 @@
         <translation>Εξορυγμενο υπόλοιπο που δεν έχει ακόμα ωριμάσει </translation>
     </message>
     <message>
-        <source>Balances</source>
-        <translation>Υπόλοιπο:</translation>
-    </message>
-    <message>
         <source>Total:</source>
         <translation>Σύνολο:</translation>
     </message>
@@ -893,7 +646,7 @@
         <source>Current total balance in watch-only addresses</source>
         <translation>Το τρέχον συνολικό υπόλοιπο σε διευθύνσεις παρακολούθησης μόνο</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     </context>
@@ -1060,10 +813,6 @@
         <translation>&amp;Κίνηση δικτύου</translation>
     </message>
     <message>
-        <source>&amp;Clear</source>
-        <translation>&amp;Εκκαθάριση</translation>
-    </message>
-    <message>
         <source>Totals</source>
         <translation>Σύνολα</translation>
     </message>
@@ -1084,28 +833,8 @@
         <translation>Καθαρισμός κονσόλας</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Χρησιμοποιήστε το πάνω και κάτω βέλος για να περιηγηθείτε στο ιστορικο, και &lt;b&gt;Ctrl-L&lt;/b&gt; για εκκαθαριση οθονης.</translation>
-    </message>
-    <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Γράψτε &lt;b&gt;help&lt;/b&gt; για μια επισκόπηση των διαθέσιμων εντολών</translation>
-    </message>
-    <message>
-        <source>%1 B</source>
-        <translation>%1 B</translation>
-    </message>
-    <message>
-        <source>%1 KB</source>
-        <translation>%1 KB</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 MB</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 GB</translation>
     </message>
     <message>
         <source>via %1</source>
@@ -1128,6 +857,251 @@
         <translation>Άγνωστο(α)</translation>
     </message>
 </context>
+<context>
+    <name>RavenGUI</name>
+    <message>
+        <source>Sign &amp;message...</source>
+        <translation>Υπογραφή &amp;Μηνύματος...</translation>
+    </message>
+    <message>
+        <source>Synchronizing with network...</source>
+        <translation>Συγχρονισμός με το δίκτυο...</translation>
+    </message>
+    <message>
+        <source>&amp;Overview</source>
+        <translation>&amp;Επισκόπηση</translation>
+    </message>
+    <message>
+        <source>Node</source>
+        <translation>Κόμβος</translation>
+    </message>
+    <message>
+        <source>Show general overview of wallet</source>
+        <translation>Εμφάνισε τη γενική εικόνα του πορτοφολιού</translation>
+    </message>
+    <message>
+        <source>&amp;Transactions</source>
+        <translation>&amp;Συναλλαγές</translation>
+    </message>
+    <message>
+        <source>Browse transaction history</source>
+        <translation>Περιήγηση στο ιστορικό συναλλαγών</translation>
+    </message>
+    <message>
+        <source>E&amp;xit</source>
+        <translation>Έ&amp;ξοδος</translation>
+    </message>
+    <message>
+        <source>Quit application</source>
+        <translation>Εξοδος από την εφαρμογή</translation>
+    </message>
+    <message>
+        <source>&amp;About %1</source>
+        <translation>&amp;Περί %1</translation>
+    </message>
+    <message>
+        <source>About &amp;Qt</source>
+        <translation>Σχετικά με &amp;Qt</translation>
+    </message>
+    <message>
+        <source>Show information about Qt</source>
+        <translation>Εμφάνισε πληροφορίες σχετικά με Qt</translation>
+    </message>
+    <message>
+        <source>&amp;Options...</source>
+        <translation>&amp;Επιλογές...</translation>
+    </message>
+    <message>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation>&amp;Κρυπτογράφησε το πορτοφόλι</translation>
+    </message>
+    <message>
+        <source>&amp;Backup Wallet...</source>
+        <translation>&amp;Αντίγραφο ασφαλείας του πορτοφολιού</translation>
+    </message>
+    <message>
+        <source>&amp;Change Passphrase...</source>
+        <translation>&amp;Άλλαξε κωδικο πρόσβασης</translation>
+    </message>
+    <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>Διευθύνσεις αποστολής</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>Διευθύνσεις λήψης</translation>
+    </message>
+    <message>
+        <source>Open &amp;URI...</source>
+        <translation>'Ανοιγμα &amp;URI</translation>
+    </message>
+    <message>
+        <source>Reindexing blocks on disk...</source>
+        <translation>Φόρτωση ευρετηρίου μπλοκ στον σκληρο δισκο...</translation>
+    </message>
+    <message>
+        <source>Send coins to a Raven address</source>
+        <translation>Στείλε νομίσματα σε μια διεύθυνση raven</translation>
+    </message>
+    <message>
+        <source>Backup wallet to another location</source>
+        <translation>Δημιουργία αντιγράφου ασφαλείας πορτοφολιού σε άλλη τοποθεσία</translation>
+    </message>
+    <message>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation>Αλλαγή του κωδικού κρυπτογράφησης του πορτοφολιού</translation>
+    </message>
+    <message>
+        <source>Open debugging and diagnostic console</source>
+        <translation>Άνοιγμα κονσόλας αποσφαλμάτωσης και διαγνωστικών</translation>
+    </message>
+    <message>
+        <source>&amp;Verify message...</source>
+        <translation>&amp;Επιβεβαίωση μηνύματος</translation>
+    </message>
+    <message>
+        <source>Raven</source>
+        <translation>Raven</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Πορτοφόλι</translation>
+    </message>
+    <message>
+        <source>&amp;Send</source>
+        <translation>&amp;Αποστολή</translation>
+    </message>
+    <message>
+        <source>&amp;Receive</source>
+        <translation>&amp;Παραλαβή </translation>
+    </message>
+    <message>
+        <source>&amp;Show / Hide</source>
+        <translation>&amp;Εμφάνισε/Κρύψε</translation>
+    </message>
+    <message>
+        <source>Show or hide the main Window</source>
+        <translation>Εμφάνιση ή αποκρύψη του κεντρικου παράθυρου </translation>
+    </message>
+    <message>
+        <source>Encrypt the private keys that belong to your wallet</source>
+        <translation>Κρυπτογραφήστε τα ιδιωτικά κλειδιά που ανήκουν στο πορτοφόλι σας </translation>
+    </message>
+    <message>
+        <source>Sign messages with your Raven addresses to prove you own them</source>
+        <translation>Υπογράψτε ένα μήνυμα για να βεβαιώσετε πως είστε ο κάτοχος αυτής της διεύθυνσης</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Raven addresses</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση Raven</translation>
+    </message>
+    <message>
+        <source>&amp;File</source>
+        <translation>&amp;Αρχείο</translation>
+    </message>
+    <message>
+        <source>&amp;Help</source>
+        <translation>&amp;Βοήθεια</translation>
+    </message>
+    <message>
+        <source>Request payments (generates QR codes and raven: URIs)</source>
+        <translation>Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις raven: )</translation>
+    </message>
+    <message>
+        <source>Show the list of used sending addresses and labels</source>
+        <translation>Προβολή της λίστας των χρησιμοποιημένων διευθύνσεων και ετικετών αποστολής</translation>
+    </message>
+    <message>
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation>Προβολή της λίστας των χρησιμοποιημένων διευθύνσεων και ετικετών λήψεως</translation>
+    </message>
+    <message>
+        <source>Open a raven: URI or payment request</source>
+        <translation>Άνοιγμα raven: URI αίτησης πληρωμής</translation>
+    </message>
+    <message>
+        <source>&amp;Command-line options</source>
+        <translation>&amp;Επιλογές γραμμής εντολών</translation>
+    </message>
+    <message>
+        <source>%1 behind</source>
+        <translation>%1 πίσω</translation>
+    </message>
+    <message>
+        <source>Last received block was generated %1 ago.</source>
+        <translation>Το τελευταίο μπλοκ που ελήφθη δημιουργήθηκε %1 πριν.</translation>
+    </message>
+    <message>
+        <source>Transactions after this will not yet be visible.</source>
+        <translation>Οι συναλλαγές μετά από αυτό δεν θα είναι ακόμη ορατες.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Σφάλμα</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Προειδοποίηση</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Πληροφορία</translation>
+    </message>
+    <message>
+        <source>Up to date</source>
+        <translation>Ενημερωμένο</translation>
+    </message>
+    <message>
+        <source>Catching up...</source>
+        <translation>Ενημέρωση...</translation>
+    </message>
+    <message>
+        <source>Date: %1
+</source>
+        <translation>Ημερομηνία: %1
+</translation>
+    </message>
+    <message>
+        <source>Amount: %1
+</source>
+        <translation>Ποσό: %1
+</translation>
+    </message>
+    <message>
+        <source>Type: %1
+</source>
+        <translation>Τύπος: %1
+</translation>
+    </message>
+    <message>
+        <source>Label: %1
+</source>
+        <translation>Ετικέτα: %1
+</translation>
+    </message>
+    <message>
+        <source>Address: %1
+</source>
+        <translation>Διεύθυνση: %1
+</translation>
+    </message>
+    <message>
+        <source>Sent transaction</source>
+        <translation>Η συναλλαγή απεστάλη</translation>
+    </message>
+    <message>
+        <source>Incoming transaction</source>
+        <translation>Εισερχόμενη συναλλαγή</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <translation>Το πορτοφόλι είναι &lt;b&gt;κρυπτογραφημένο&lt;/b&gt; και &lt;b&gt;ξεκλείδωτο&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <translation>Το πορτοφόλι είναι &lt;b&gt;κρυπτογραφημένο&lt;/b&gt; και &lt;b&gt;κλειδωμένο&lt;/b&gt;</translation>
+    </message>
+    </context>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
@@ -1222,6 +1196,15 @@
     </message>
     </context>
 <context>
+    <name>ReissueAssetDialog</name>
+    </context>
+<context>
+    <name>RestrictedAssetsDialog</name>
+    </context>
+<context>
+    <name>SendAssetsEntry</name>
+    </context>
+<context>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
@@ -1292,24 +1275,12 @@
         <translation>Απόκρυψη</translation>
     </message>
     <message>
-        <source>total at least</source>
-        <translation>συνολικά τουλάχιστον</translation>
-    </message>
-    <message>
         <source>Recommended:</source>
         <translation>Προτεινόμενο: </translation>
     </message>
     <message>
         <source>Custom:</source>
         <translation>Προσαρμογή:</translation>
-    </message>
-    <message>
-        <source>normal</source>
-        <translation>κανονικό</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>Γρήγορο</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -1401,10 +1372,6 @@
     <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation>Εισάγεται μία ετικέτα για αυτή την διεύθυνση για να προστεθεί στη λίστα με τις χρησιμοποιημένες διευθύνσεις</translation>
-    </message>
-    <message>
-        <source>Pay To:</source>
-        <translation>Πληρωμή σε:</translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -1757,10 +1724,6 @@
         <translation>ΕΙσαγωγή...</translation>
     </message>
     <message>
-        <source>Invalid -onion address: '%s'</source>
-        <translation>Άκυρη διεύθυνση -onion : '%s'</translation>
-    </message>
-    <message>
         <source>Not enough file descriptors available.</source>
         <translation>Δεν ειναι αρκετες περιγραφες αρχείων διαθέσιμες.</translation>
     </message>
@@ -1779,10 +1742,6 @@
     <message>
         <source>Verifying blocks...</source>
         <translation>Επαλήθευση των μπλοκ... </translation>
-    </message>
-    <message>
-        <source>Verifying wallet...</source>
-        <translation>Επαλήθευση πορτοφολιου... </translation>
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>
@@ -1865,10 +1824,6 @@
         <translation>Να επιτρέπονται οι έλεγχοι DNS για προσθήκη και σύνδεση κόμβων</translation>
     </message>
     <message>
-        <source>Loading addresses...</source>
-        <translation>Φόρτωση διευθύνσεων...</translation>
-    </message>
-    <message>
         <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
         <translation>Πόσο εξονυχιστική να είναι η επιβεβαίωση του μπλοκ (0-4, προεπιλογή: %u)</translation>
     </message>
@@ -1887,10 +1842,6 @@
     <message>
         <source>Include IP addresses in debug output (default: %u)</source>
         <translation>Να συμπεριληφθεί η διεύθυνση IP στην αναφορά? (προεπιλογή: %u)</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Δεν είναι έγκυρη η διεύθυνση διαμεσολαβητή: '%s'</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>

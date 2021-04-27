@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="de">
+<TS language="de" version="2.1">
 <context>
     <name>AddressBookPage</name>
     <message>
@@ -81,7 +79,7 @@
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation>B&amp;earbeiten</translation>
+        <translation>&amp;Bearbeiten</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -151,7 +149,7 @@
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Dieser Vorgang benötigt Ihre Passphrase, um die Wallet zu entschlüsseln.</translation>
+        <translation>Dieser Vorgang benötigt Ihre Passphrase, um das Wallet zu entschlüsseln.</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
@@ -175,7 +173,7 @@
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>Sind Sie sich sicher, dass Sie Ihre Wallet verschlüsseln möchten?</translation>
+        <translation>Sind Sie sich sicher, dass Sie Ihr Wallet verschlüsseln möchten?</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -183,7 +181,7 @@
     </message>
     <message>
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ravens from being stolen by malware infecting your computer.</source>
-        <translation>%1 wird jetzt beendet, um den Verschlüsselungsprozess abzuschließen. Bitte beachten Sie, dass die Wallet-Verschlüsselung nicht vollständig vor Diebstahl Ihrer Ravens durch Schadprogramme schützt, die Ihren Computer befällt.</translation>
+        <translation>%1 wird jetzt beendet, um den Verschlüsselungsprozess abzuschließen. Bitte beachten Sie, dass die Wallet-Verschlüsselung nicht vollständig vor Diebstahl Ihrer Raven durch Schadprogramme schützt, die Ihren Computer befällt.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -198,8 +196,8 @@
         <translation>Die Wallet-Verschlüsselung ist aufgrund eines internen Fehlers fehlgeschlagen. Ihre Wallet wurde nicht verschlüsselt.</translation>
     </message>
     <message>
-        <source>The supplied passphrase does not match.</source>
-        <translation>Die eingegebene Passphrase stimmt nicht überein.</translation>
+        <source>The supplied passphrases do not match.</source>
+        <translation>Die angegebenen Passphrasen stimmen nicht überein.</translation>
     </message>
     <message>
         <source>Wallet unlock failed</source>
@@ -219,9 +217,193 @@
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
-        <translation>Warnung: Die Feststelltaste ist aktiviert!</translation>
+        <translation>Warnung: Feststelltaste ist aktiviert!</translation>
     </message>
 </context>
+<context>
+    <name>AssetControlDialog</name>
+    <message>
+        <source>Asset Selection</source>
+        <translation>Assetauswahl</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Anzahl:</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Betrag:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Staub:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Gebühr:</translation>
+    </message>
+    <message>
+        <source>After Fee:</source>
+        <translation>Abzgl. Gebühr:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Wechselgeld:</translation>
+    </message>
+    <message>
+        <source>(un)select all</source>
+        <translation>Alle (ab)wählen</translation>
+    </message>
+    <message>
+        <source>Tree mode</source>
+        <translation>Baumansicht</translation>
+    </message>
+    <message>
+        <source>List mode</source>
+        <translation>Listenansicht</translation>
+    </message>
+    <message>
+        <source>View assets that you have the ownership asset for</source>
+        <translation>Zeige Assets, für die Du das 'ownership asset' hast</translation>
+    </message>
+    <message>
+        <source>View Administrator Assets</source>
+        <translation>Zeige Administrator Assets</translation>
+    </message>
+    <message>
+        <source>Asset</source>
+        <translation>Asset</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Anzahl</translation>
+    </message>
+    <message>
+        <source>Received with label</source>
+        <translation>Empfange mit Label</translation>
+    </message>
+    <message>
+        <source>Received with address</source>
+        <translation>Empfange mit Adresse</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
+        <source>Confirmations</source>
+        <translation>Bestätigungen</translation>
+    </message>
+    <message>
+        <source>Confirmed</source>
+        <translation>Bestätigt</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Adresse kopieren</translation>
+    </message>
+    <message>
+        <source>Copy label</source>
+        <translation>Label kopieren</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Betrag kopieren</translation>
+    </message>
+    <message>
+        <source>Copy transaction ID</source>
+        <translation>Transaction ID kopieren</translation>
+    </message>
+    <message>
+        <source>Lock unspent</source>
+        <translation>Nicht ausgegebenen Betrag sperren</translation>
+    </message>
+    <message>
+        <source>Unlock unspent</source>
+        <translation>Nicht ausgegebenen Betrag entsperren</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Anzahl kopieren</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>Gebühr kopieren</translation>
+    </message>
+    <message>
+        <source>Copy after fee</source>
+        <translation>Abzüglich Gebühr kopieren</translation>
+    </message>
+    <message>
+        <source>Copy bytes</source>
+        <translation>Byte kopieren</translation>
+    </message>
+    <message>
+        <source>Copy dust</source>
+        <translation>'Staub' kopieren</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>Wechselgeld kopieren</translation>
+    </message>
+    <message>
+        <source>(%1 locked)</source>
+        <translation>(%1 gesperrt)</translation>
+    </message>
+    <message>
+        <source>yes</source>
+        <translation>ja</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>nein</translation>
+    </message>
+    <message>
+        <source>This label turns red if any recipient receives an amount smaller than the current dust threshold.</source>
+        <translation>Diese Bezeichnung wird rot dargestellt, wenn irgendein Empfänger einen Betrag kleiner als die derzeitige 'Staubgrenze' erhält.</translation>
+    </message>
+    <message>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Kann pro Eingabe um +/- %1 Satoshi abweichen.</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(keine Bezeichnung)</translation>
+    </message>
+    <message>
+        <source>change from %1 (%2)</source>
+        <translation>Wechselgeld von %1 (%2)</translation>
+    </message>
+    <message>
+        <source>(change)</source>
+        <translation>(Wechselgeld)</translation>
+    </message>
+</context>
+<context>
+    <name>AssetTableModel</name>
+    <message>
+        <source>Name</source>
+        <translation>Name</translation>
+    </message>
+    <message>
+        <source>Quantity</source>
+        <translation>Anzahl</translation>
+    </message>
+</context>
+<context>
+    <name>AssetsDialog</name>
+    <message>
+        <source>Send Coins</source>
+        <translation>Raven überweisen</translation>
+    </message>
+    </context>
+<context>
+    <name>AssignQualifier</name>
+    </context>
 <context>
     <name>BanTableModel</name>
     <message>
@@ -231,327 +413,6 @@
     <message>
         <source>Banned Until</source>
         <translation>Gesperrt bis</translation>
-    </message>
-</context>
-<context>
-    <name>RavenGUI</name>
-    <message>
-        <source>Sign &amp;message...</source>
-        <translation>Nachricht s&amp;ignieren...</translation>
-    </message>
-    <message>
-        <source>Synchronizing with network...</source>
-        <translation>Synchronisiere mit Netzwerk...</translation>
-    </message>
-    <message>
-        <source>&amp;Overview</source>
-        <translation>&amp;Übersicht</translation>
-    </message>
-    <message>
-        <source>Node</source>
-        <translation>Knoten</translation>
-    </message>
-    <message>
-        <source>Show general overview of wallet</source>
-        <translation>Allgemeine Wallet-Übersicht anzeigen</translation>
-    </message>
-    <message>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Transaktionen</translation>
-    </message>
-    <message>
-        <source>Browse transaction history</source>
-        <translation>Transaktionsverlauf durchsehen</translation>
-    </message>
-    <message>
-        <source>E&amp;xit</source>
-        <translation>&amp;Beenden</translation>
-    </message>
-    <message>
-        <source>Quit application</source>
-        <translation>Anwendung beenden</translation>
-    </message>
-    <message>
-        <source>&amp;About %1</source>
-        <translation>Über %1</translation>
-    </message>
-    <message>
-        <source>Show information about %1</source>
-        <translation>Informationen über %1 anzeigen</translation>
-    </message>
-    <message>
-        <source>About &amp;Qt</source>
-        <translation>Über &amp;Qt</translation>
-    </message>
-    <message>
-        <source>Show information about Qt</source>
-        <translation>Informationen über Qt anzeigen</translation>
-    </message>
-    <message>
-        <source>&amp;Options...</source>
-        <translation>&amp;Konfiguration...</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for %1</source>
-        <translation>Konfiguration von %1 bearbeiten</translation>
-    </message>
-    <message>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>Wallet &amp;verschlüsseln...</translation>
-    </message>
-    <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation>Wallet &amp;sichern...</translation>
-    </message>
-    <message>
-        <source>&amp;Change Passphrase...</source>
-        <translation>Passphrase &amp;ändern...</translation>
-    </message>
-    <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Zahlungsadressen...</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Empfangsadressen...</translation>
-    </message>
-    <message>
-        <source>Open &amp;URI...</source>
-        <translation>&amp;URI öffnen...</translation>
-    </message>
-    <message>
-        <source>Click to disable network activity.</source>
-        <translation>Klicken zum Deaktivieren der Netzwerkaktivität.</translation>
-    </message>
-    <message>
-        <source>Network activity disabled.</source>
-        <translation>Netzwerkaktivität deaktiviert.</translation>
-    </message>
-    <message>
-        <source>Click to enable network activity again.</source>
-        <translation>Klicken zum Aktivieren der Netzwerkaktivität.</translation>
-    </message>
-    <message>
-        <source>Syncing Headers (%1%)...</source>
-        <translation>Header werden synchronisiert (%1%)...</translation>
-    </message>
-    <message>
-        <source>Reindexing blocks on disk...</source>
-        <translation>Reindiziere Blöcke auf Datenträger...</translation>
-    </message>
-    <message>
-        <source>Send coins to a Raven address</source>
-        <translation>Ravens an eine Raven-Adresse überweisen</translation>
-    </message>
-    <message>
-        <source>Backup wallet to another location</source>
-        <translation>Eine Wallet-Sicherungskopie erstellen und abspeichern</translation>
-    </message>
-    <message>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>Ändert die Passphrase, die für die Wallet-Verschlüsselung benutzt wird</translation>
-    </message>
-    <message>
-        <source>&amp;Debug window</source>
-        <translation>&amp;Debugfenster</translation>
-    </message>
-    <message>
-        <source>Open debugging and diagnostic console</source>
-        <translation>Debugging- und Diagnosekonsole öffnen</translation>
-    </message>
-    <message>
-        <source>&amp;Verify message...</source>
-        <translation>Nachricht &amp;verifizieren...</translation>
-    </message>
-    <message>
-        <source>Raven</source>
-        <translation>Raven</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Wallet</translation>
-    </message>
-    <message>
-        <source>&amp;Send</source>
-        <translation>&amp;Überweisen</translation>
-    </message>
-    <message>
-        <source>&amp;Receive</source>
-        <translation>&amp;Empfangen</translation>
-    </message>
-    <message>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Anzeigen / Verstecken</translation>
-    </message>
-    <message>
-        <source>Show or hide the main Window</source>
-        <translation>Das Hauptfenster anzeigen oder verstecken</translation>
-    </message>
-    <message>
-        <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Verschlüsselt die zu Ihrer Wallet gehörenden privaten Schlüssel</translation>
-    </message>
-    <message>
-        <source>Sign messages with your Raven addresses to prove you own them</source>
-        <translation>Nachrichten signieren, um den Besitz Ihrer Raven-Adressen zu beweisen</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Raven addresses</source>
-        <translation>Nachrichten verifizieren, um sicherzustellen, dass diese mit den angegebenen Raven-Adressen signiert wurden</translation>
-    </message>
-    <message>
-        <source>&amp;File</source>
-        <translation>&amp;Datei</translation>
-    </message>
-    <message>
-        <source>&amp;Settings</source>
-        <translation>&amp;Einstellungen</translation>
-    </message>
-    <message>
-        <source>&amp;Help</source>
-        <translation>&amp;Hilfe</translation>
-    </message>
-    <message>
-        <source>Tabs toolbar</source>
-        <translation>Registerkartenleiste</translation>
-    </message>
-    <message>
-        <source>Request payments (generates QR codes and raven: URIs)</source>
-        <translation>Zahlungen anfordern (erzeugt QR-Codes und "raven:"-URIs)</translation>
-    </message>
-    <message>
-        <source>Show the list of used sending addresses and labels</source>
-        <translation>Liste verwendeter Zahlungsadressen und Bezeichnungen anzeigen</translation>
-    </message>
-    <message>
-        <source>Show the list of used receiving addresses and labels</source>
-        <translation>Liste verwendeter Empfangsadressen und Bezeichnungen anzeigen</translation>
-    </message>
-    <message>
-        <source>Open a raven: URI or payment request</source>
-        <translation>Eine "raven:"-URI oder Zahlungsanforderung öffnen</translation>
-    </message>
-    <message>
-        <source>&amp;Command-line options</source>
-        <translation>&amp;Kommandozeilenoptionen</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Raven network</source>
-        <translation><numerusform>%n aktive Verbindung zum Raven-Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum Raven-Netzwerk</numerusform></translation>
-    </message>
-    <message>
-        <source>Indexing blocks on disk...</source>
-        <translation>Indiziere Blöcke auf Datenträger...</translation>
-    </message>
-    <message>
-        <source>Processing blocks on disk...</source>
-        <translation>Verarbeite Blöcke auf Datenträger...</translation>
-    </message>
-    <message numerus="yes">
-        <source>Processed %n block(s) of transaction history.</source>
-        <translation><numerusform>%n Block des Transaktionsverlaufs verarbeitet.</numerusform><numerusform>%n Blöcke des Transaktionsverlaufs verarbeitet.</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>%1 im Rückstand</translation>
-    </message>
-    <message>
-        <source>Last received block was generated %1 ago.</source>
-        <translation>Der letzte empfangene Block ist %1 alt.</translation>
-    </message>
-    <message>
-        <source>Transactions after this will not yet be visible.</source>
-        <translation>Transaktionen hiernach werden noch nicht angezeigt.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Fehler</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Warnung</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Hinweis</translation>
-    </message>
-    <message>
-        <source>Up to date</source>
-        <translation>Auf aktuellem Stand</translation>
-    </message>
-    <message>
-        <source>Show the %1 help message to get a list with possible Raven command-line options</source>
-        <translation>Zeige den "%1"-Hilfetext, um eine Liste mit möglichen Kommandozeilenoptionen zu erhalten</translation>
-    </message>
-    <message>
-        <source>%1 client</source>
-        <translation>%1 Client</translation>
-    </message>
-    <message>
-        <source>Connecting to peers...</source>
-        <translation>Verbinde mit Netzwerk...</translation>
-    </message>
-    <message>
-        <source>Catching up...</source>
-        <translation>Hole auf...</translation>
-    </message>
-    <message>
-        <source>Date: %1
-</source>
-        <translation>Datum: %1
-</translation>
-    </message>
-    <message>
-        <source>Amount: %1
-</source>
-        <translation>Betrag: %1
-</translation>
-    </message>
-    <message>
-        <source>Type: %1
-</source>
-        <translation>Typ: %1
-</translation>
-    </message>
-    <message>
-        <source>Label: %1
-</source>
-        <translation>Bezeichnung: %1
-</translation>
-    </message>
-    <message>
-        <source>Address: %1
-</source>
-        <translation>Adresse: %1
-</translation>
-    </message>
-    <message>
-        <source>Sent transaction</source>
-        <translation>Gesendete Transaktion</translation>
-    </message>
-    <message>
-        <source>Incoming transaction</source>
-        <translation>Eingehende Transaktion</translation>
-    </message>
-    <message>
-        <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
-        <translation>HD Schlüssel Generierung ist &lt;b&gt;aktiviert&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation>HD Schlüssel Generierung ist &lt;b&gt;deaktiviert&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Wallet ist &lt;b&gt;verschlüsselt&lt;/b&gt; und aktuell &lt;b&gt;entsperrt&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Wallet ist &lt;b&gt;verschlüsselt&lt;/b&gt; und aktuell &lt;b&gt;gesperrt&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>A fatal error occurred. Raven can no longer continue safely and will quit.</source>
-        <translation>Ein schwerer Fehler ist aufgetreten. Raven kann nicht stabil weiter ausgeführt werden und wird beendet.</translation>
     </message>
 </context>
 <context>
@@ -706,6 +567,9 @@
     </message>
 </context>
 <context>
+    <name>CreateAssetDialog</name>
+    </context>
+<context>
     <name>EditAddressDialog</name>
     <message>
         <source>Edit Address</source>
@@ -784,6 +648,12 @@
     </message>
 </context>
 <context>
+    <name>FreezeAddress</name>
+    </context>
+<context>
+    <name>GUIUtil::SyncWarningMessage</name>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
@@ -853,8 +723,16 @@
         <translation>Da Sie das Programm gerade zum ersten Mal starten, können Sie nun auswählen wo %1 seine Daten ablegen wird.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Raven block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1 wird eine Kopie der Raven Blockchain herunterladen und speichern. Mindestens %2GB Daten werden in diesem Verzeichnis abgelegt und die Datenmenge wächst über die Zeit an. Auch die Wallet wird in diesem Verzeichnis abgelegt.</translation>
+        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
+        <translation>Wenn Sie auf 'OK' klicken, beginnt %1 mit dem Herunterladen und Verarbeiten der gesamten %4-Blockchain (%2GB), beginnend mit den frühesten Transaktionen in %3 beim ersten Start von %4.</translation>
+    </message>
+    <message>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <translation>Die anfängliche Synchronisierung ist sehr anspruchsvoll und kann Hardware-Probleme mit Ihrem Computer aufdecken, die zuvor unbemerkt geblieben waren. Jedes Mal, wenn Sie %1 ausführen, wird das Herunterladen an der Stelle fortgesetzt, an der es unterbrochen wurde.</translation>
+    </message>
+    <message>
+        <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
+        <translation>Wenn Sie sich dafür entschieden haben, den Speicherplatz der Blockchain zu begrenzen, müssen die zurückliegenden Daten dennoch heruntergeladen und verarbeitet werden, werden aber anschließend gelöscht, um die Festplattennutzung gering zu halten.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -872,15 +750,19 @@
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
-    <message numerus="yes">
-        <source>%n GB of free space available</source>
-        <translation><numerusform>%n GB freier Speicherplatz verfügbar</numerusform><numerusform>%n GB freier Speicherplatz verfügbar</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>(of %n GB needed)</source>
-        <translation><numerusform>(von benötigtem %n GB)</numerusform><numerusform>(von benötigten %n GB)</numerusform></translation>
-    </message>
-</context>
+    </context>
+<context>
+    <name>MnemonicDialog</name>
+    </context>
+<context>
+    <name>MnemonicDialog1</name>
+    </context>
+<context>
+    <name>MnemonicDialog2</name>
+    </context>
+<context>
+    <name>MnemonicDialog3</name>
+    </context>
 <context>
     <name>ModalOverlay</name>
     <message>
@@ -932,6 +814,9 @@
         <translation>Unbekannt. Synchronisiere Headers (%1)...</translation>
     </message>
 </context>
+<context>
+    <name>MyRestrictedAssetsTableModel</name>
+    </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -986,14 +871,6 @@
         <translation>Anzahl an Skript-&amp;Verifizierungs-Threads</translation>
     </message>
     <message>
-        <source>Accept connections from outside</source>
-        <translation>Eingehende Verbindungen annehmen</translation>
-    </message>
-    <message>
-        <source>Allow incoming connections</source>
-        <translation>Erlaubt eingehende Verbindungen</translation>
-    </message>
-    <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>IP-Adresse des Proxies (z.B. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
@@ -1004,10 +881,6 @@
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>Externe URLs (z.B. ein Block-Explorer), die im Kontextmenü des Transaktionsverlaufs eingefügt werden. In der URL wird %s durch den Transaktionshash ersetzt. Bei Angabe mehrerer URLs müssen diese durch "|" voneinander getrennt werden.</translation>
-    </message>
-    <message>
-        <source>Third party transaction URLs</source>
-        <translation>Externe Transaktions-URLs</translation>
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
@@ -1082,10 +955,6 @@
         <translation>Benutzt um Gegenstellen zu erreichen über:</translation>
     </message>
     <message>
-        <source>Shows, if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
-        <translation>Zeigt an, ob der eingegebene Standard SOCKS5 Proxy genutzt wird um Peers mit dem Netzwerktyp zu erreichen.</translation>
-    </message>
-    <message>
         <source>IPv4</source>
         <translation>IPv4</translation>
     </message>
@@ -1102,20 +971,8 @@
         <translation>Über einen separaten SOCKS5 Proxy für Tor Services mit dem Raven Netzwerk verbinden.</translation>
     </message>
     <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
-        <translation>Separaten SOCKS5-Proxy verwenden, um Gegenstellen über versteckte Tor-Dienste zu erreichen:</translation>
-    </message>
-    <message>
         <source>&amp;Window</source>
         <translation>&amp;Programmfenster</translation>
-    </message>
-    <message>
-        <source>&amp;Hide the icon from the system tray.</source>
-        <translation>&amp;Das Icon im Infobereich verstecken.</translation>
-    </message>
-    <message>
-        <source>Hide tray icon</source>
-        <translation>Icon verstecken</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
@@ -1229,10 +1086,6 @@
         <translation>Erarbeiteter Betrag der noch nicht gereift ist</translation>
     </message>
     <message>
-        <source>Balances</source>
-        <translation>Kontostände</translation>
-    </message>
-    <message>
         <source>Total:</source>
         <translation>Gesamtbetrag:</translation>
     </message>
@@ -1264,7 +1117,7 @@
         <source>Current total balance in watch-only addresses</source>
         <translation>Aktueller Gesamtbetrag in beobachteten Adressen aus obigen Kategorien</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -1374,7 +1227,7 @@
         <source>Ping</source>
         <translation>Ping</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -1413,26 +1266,6 @@
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-    <message numerus="yes">
-        <source>%n second(s)</source>
-        <translation><numerusform>%n Sekunde</numerusform><numerusform>%n Sekunden</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n minute(s)</source>
-        <translation><numerusform>%n Minute</numerusform><numerusform>%n Minuten</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n Stunde</numerusform><numerusform>%n Stunden</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n Tag</numerusform><numerusform>%n Tage</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n Woche</numerusform><numerusform>%n Wochen</numerusform></translation>
-    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 und %2</translation>
@@ -1441,7 +1274,7 @@
         <source>%1 didn't yet exit safely...</source>
         <translation>%1 wurde noch nicht sicher beendet...</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>QObject::QObject</name>
     <message>
@@ -1521,10 +1354,6 @@
     <message>
         <source>Number of connections</source>
         <translation>Anzahl der Verbindungen</translation>
-    </message>
-    <message>
-        <source>Blockchain</source>
-        <translation>Blockchain</translation>
     </message>
     <message>
         <source>Current number of blocks</source>
@@ -1659,10 +1488,6 @@
         <translation>&amp;Netzwerkauslastung</translation>
     </message>
     <message>
-        <source>&amp;Clear</source>
-        <translation>&amp;Zurücksetzen</translation>
-    </message>
-    <message>
         <source>Totals</source>
         <translation>Gesamtbetrag:</translation>
     </message>
@@ -1715,36 +1540,12 @@
         <translation>Willkommen in der %1 RPC Konsole.</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Pfeiltaste hoch und runter, um den Verlauf durchzublättern und &lt;b&gt;Strg-L&lt;/b&gt;, um die Konsole zurückzusetzen.</translation>
-    </message>
-    <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Bitte &lt;b&gt;help&lt;/b&gt; eingeben, um eine Übersicht verfügbarer Befehle zu erhalten.</translation>
     </message>
     <message>
-        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramification of a command.</source>
-        <translation>WARNUNG: Betrüger versuchen aktiv Nutzer dazu zu bringen Kommandos hier auszuführen um die Wallet Inhalte zu stehlen. Diese Konsole sollte nicht benutzt werden ausser man kennt die möglichen Folgen des Kommandos.</translation>
-    </message>
-    <message>
         <source>Network activity disabled</source>
         <translation>Netzwerkaktivität deaktiviert</translation>
-    </message>
-    <message>
-        <source>%1 B</source>
-        <translation>%1 B</translation>
-    </message>
-    <message>
-        <source>%1 KB</source>
-        <translation>%1 KB</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 MB</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 GB</translation>
     </message>
     <message>
         <source>(node id: %1)</source>
@@ -1777,6 +1578,307 @@
     <message>
         <source>Unknown</source>
         <translation>Unbekannt</translation>
+    </message>
+</context>
+<context>
+    <name>RavenGUI</name>
+    <message>
+        <source>Sign &amp;message...</source>
+        <translation>Nachricht s&amp;ignieren...</translation>
+    </message>
+    <message>
+        <source>Synchronizing with network...</source>
+        <translation>Synchronisiere mit Netzwerk...</translation>
+    </message>
+    <message>
+        <source>&amp;Overview</source>
+        <translation>&amp;Übersicht</translation>
+    </message>
+    <message>
+        <source>Node</source>
+        <translation>Knoten</translation>
+    </message>
+    <message>
+        <source>Show general overview of wallet</source>
+        <translation>Allgemeine Wallet-Übersicht anzeigen</translation>
+    </message>
+    <message>
+        <source>&amp;Transactions</source>
+        <translation>&amp;Transaktionen</translation>
+    </message>
+    <message>
+        <source>Browse transaction history</source>
+        <translation>Transaktionsverlauf durchsehen</translation>
+    </message>
+    <message>
+        <source>E&amp;xit</source>
+        <translation>&amp;Beenden</translation>
+    </message>
+    <message>
+        <source>Quit application</source>
+        <translation>Anwendung beenden</translation>
+    </message>
+    <message>
+        <source>&amp;About %1</source>
+        <translation>Über %1</translation>
+    </message>
+    <message>
+        <source>Show information about %1</source>
+        <translation>Informationen über %1 anzeigen</translation>
+    </message>
+    <message>
+        <source>About &amp;Qt</source>
+        <translation>Über &amp;Qt</translation>
+    </message>
+    <message>
+        <source>Show information about Qt</source>
+        <translation>Informationen über Qt anzeigen</translation>
+    </message>
+    <message>
+        <source>&amp;Options...</source>
+        <translation>&amp;Konfiguration...</translation>
+    </message>
+    <message>
+        <source>Modify configuration options for %1</source>
+        <translation>Konfiguration von %1 bearbeiten</translation>
+    </message>
+    <message>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation>Wallet &amp;verschlüsseln...</translation>
+    </message>
+    <message>
+        <source>&amp;Backup Wallet...</source>
+        <translation>Wallet &amp;sichern...</translation>
+    </message>
+    <message>
+        <source>&amp;Change Passphrase...</source>
+        <translation>Passphrase &amp;ändern...</translation>
+    </message>
+    <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>&amp;Zahlungsadressen...</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>&amp;Empfangsadressen...</translation>
+    </message>
+    <message>
+        <source>Open &amp;URI...</source>
+        <translation>&amp;URI öffnen...</translation>
+    </message>
+    <message>
+        <source>Click to disable network activity.</source>
+        <translation>Klicken zum Deaktivieren der Netzwerkaktivität.</translation>
+    </message>
+    <message>
+        <source>Network activity disabled.</source>
+        <translation>Netzwerkaktivität deaktiviert.</translation>
+    </message>
+    <message>
+        <source>Click to enable network activity again.</source>
+        <translation>Klicken zum Aktivieren der Netzwerkaktivität.</translation>
+    </message>
+    <message>
+        <source>Syncing Headers (%1%)...</source>
+        <translation>Header werden synchronisiert (%1%)...</translation>
+    </message>
+    <message>
+        <source>Reindexing blocks on disk...</source>
+        <translation>Reindiziere Blöcke auf Datenträger...</translation>
+    </message>
+    <message>
+        <source>Send coins to a Raven address</source>
+        <translation>Ravens an eine Raven-Adresse überweisen</translation>
+    </message>
+    <message>
+        <source>Backup wallet to another location</source>
+        <translation>Eine Wallet-Sicherungskopie erstellen und abspeichern</translation>
+    </message>
+    <message>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation>Ändert die Passphrase, die für die Wallet-Verschlüsselung benutzt wird</translation>
+    </message>
+    <message>
+        <source>Open debugging and diagnostic console</source>
+        <translation>Debugging- und Diagnosekonsole öffnen</translation>
+    </message>
+    <message>
+        <source>&amp;Verify message...</source>
+        <translation>Nachricht &amp;verifizieren...</translation>
+    </message>
+    <message>
+        <source>Raven</source>
+        <translation>Raven</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Wallet</translation>
+    </message>
+    <message>
+        <source>&amp;Send</source>
+        <translation>&amp;Überweisen</translation>
+    </message>
+    <message>
+        <source>&amp;Receive</source>
+        <translation>&amp;Empfangen</translation>
+    </message>
+    <message>
+        <source>&amp;Show / Hide</source>
+        <translation>&amp;Anzeigen / Verstecken</translation>
+    </message>
+    <message>
+        <source>Show or hide the main Window</source>
+        <translation>Das Hauptfenster anzeigen oder verstecken</translation>
+    </message>
+    <message>
+        <source>Encrypt the private keys that belong to your wallet</source>
+        <translation>Verschlüsselt die zu Ihrer Wallet gehörenden privaten Schlüssel</translation>
+    </message>
+    <message>
+        <source>Sign messages with your Raven addresses to prove you own them</source>
+        <translation>Nachrichten signieren, um den Besitz Ihrer Raven-Adressen zu beweisen</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Raven addresses</source>
+        <translation>Nachrichten verifizieren, um sicherzustellen, dass diese mit den angegebenen Raven-Adressen signiert wurden</translation>
+    </message>
+    <message>
+        <source>&amp;File</source>
+        <translation>&amp;Datei</translation>
+    </message>
+    <message>
+        <source>&amp;Help</source>
+        <translation>&amp;Hilfe</translation>
+    </message>
+    <message>
+        <source>Request payments (generates QR codes and raven: URIs)</source>
+        <translation>Zahlungen anfordern (erzeugt QR-Codes und "raven:"-URIs)</translation>
+    </message>
+    <message>
+        <source>Show the list of used sending addresses and labels</source>
+        <translation>Liste verwendeter Zahlungsadressen und Bezeichnungen anzeigen</translation>
+    </message>
+    <message>
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation>Liste verwendeter Empfangsadressen und Bezeichnungen anzeigen</translation>
+    </message>
+    <message>
+        <source>Open a raven: URI or payment request</source>
+        <translation>Eine "raven:"-URI oder Zahlungsanforderung öffnen</translation>
+    </message>
+    <message>
+        <source>&amp;Command-line options</source>
+        <translation>&amp;Kommandozeilenoptionen</translation>
+    </message>
+    <message>
+        <source>Indexing blocks on disk...</source>
+        <translation>Indiziere Blöcke auf Datenträger...</translation>
+    </message>
+    <message>
+        <source>Processing blocks on disk...</source>
+        <translation>Verarbeite Blöcke auf Datenträger...</translation>
+    </message>
+    <message>
+        <source>%1 behind</source>
+        <translation>%1 im Rückstand</translation>
+    </message>
+    <message>
+        <source>Last received block was generated %1 ago.</source>
+        <translation>Der letzte empfangene Block ist %1 alt.</translation>
+    </message>
+    <message>
+        <source>Transactions after this will not yet be visible.</source>
+        <translation>Transaktionen hiernach werden noch nicht angezeigt.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Fehler</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Warnung</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Hinweis</translation>
+    </message>
+    <message>
+        <source>Up to date</source>
+        <translation>Auf aktuellem Stand</translation>
+    </message>
+    <message>
+        <source>Show the %1 help message to get a list with possible Raven command-line options</source>
+        <translation>Zeige den "%1"-Hilfetext, um eine Liste mit möglichen Kommandozeilenoptionen zu erhalten</translation>
+    </message>
+    <message>
+        <source>%1 client</source>
+        <translation>%1 Client</translation>
+    </message>
+    <message>
+        <source>Connecting to peers...</source>
+        <translation>Verbinde mit Netzwerk...</translation>
+    </message>
+    <message>
+        <source>Catching up...</source>
+        <translation>Hole auf...</translation>
+    </message>
+    <message>
+        <source>Date: %1
+</source>
+        <translation>Datum: %1
+</translation>
+    </message>
+    <message>
+        <source>Amount: %1
+</source>
+        <translation>Betrag: %1
+</translation>
+    </message>
+    <message>
+        <source>Type: %1
+</source>
+        <translation>Typ: %1
+</translation>
+    </message>
+    <message>
+        <source>Label: %1
+</source>
+        <translation>Bezeichnung: %1
+</translation>
+    </message>
+    <message>
+        <source>Address: %1
+</source>
+        <translation>Adresse: %1
+</translation>
+    </message>
+    <message>
+        <source>Sent transaction</source>
+        <translation>Gesendete Transaktion</translation>
+    </message>
+    <message>
+        <source>Incoming transaction</source>
+        <translation>Eingehende Transaktion</translation>
+    </message>
+    <message>
+        <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
+        <translation>HD Schlüssel Generierung ist &lt;b&gt;aktiviert&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
+        <translation>HD Schlüssel Generierung ist &lt;b&gt;deaktiviert&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <translation>Wallet ist &lt;b&gt;verschlüsselt&lt;/b&gt; und aktuell &lt;b&gt;entsperrt&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <translation>Wallet ist &lt;b&gt;verschlüsselt&lt;/b&gt; und aktuell &lt;b&gt;gesperrt&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>A fatal error occurred. Raven can no longer continue safely and will quit.</source>
+        <translation>Ein schwerer Fehler ist aufgetreten. Raven kann nicht stabil weiter ausgeführt werden und wird beendet.</translation>
     </message>
 </context>
 <context>
@@ -1953,6 +2055,15 @@
     </message>
 </context>
 <context>
+    <name>ReissueAssetDialog</name>
+    </context>
+<context>
+    <name>RestrictedAssetsDialog</name>
+    </context>
+<context>
+    <name>SendAssetsEntry</name>
+    </context>
+<context>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
@@ -2031,10 +2142,6 @@
         <translation>Ausblenden</translation>
     </message>
     <message>
-        <source>total at least</source>
-        <translation>Mindestbetrag</translation>
-    </message>
-    <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for raven transactions than the network can process.</source>
         <translation>Nur die minimale Gebühr zu bezahlen ist so lange in Ordnung, wie weniger Transaktionsvolumen als Platz in den Blöcken vorhanden ist. Aber Vorsicht, diese Option kann dazu führen, dass Transaktionen nicht bestätigt werden, wenn mehr Bedarf an Raven-Transaktionen besteht als das Netzwerk verarbeiten kann.</translation>
     </message>
@@ -2053,14 +2160,6 @@
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
         <translation>(Intelligente Gebührenlogik ist noch nicht verfügbar. Normalerweise dauert dies einige Blöcke lang...)</translation>
-    </message>
-    <message>
-        <source>normal</source>
-        <translation>normal</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>schnell</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -2186,17 +2285,9 @@
         <source>Payment request expired.</source>
         <translation>Zahlungsanforderung abgelaufen.</translation>
     </message>
-    <message numerus="yes">
-        <source>%n block(s)</source>
-        <translation><numerusform>%n Block</numerusform><numerusform>%n Blöcke</numerusform></translation>
-    </message>
     <message>
         <source>Pay only the required fee of %1</source>
         <translation>Nur die notwendige Gebühr in Höhe von %1 zahlen</translation>
-    </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>Voraussichtlicher Beginn der Bestätigung innerhalb von %n Block.</numerusform><numerusform>Voraussichtlicher Beginn der Bestätigung innerhalb von %n Blöcken.</numerusform></translation>
     </message>
     <message>
         <source>Warning: Invalid Raven address</source>
@@ -2288,10 +2379,6 @@
     <message>
         <source>A message that was attached to the raven: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Raven network.</source>
         <translation>Eine an die "raven:"-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Raven-Netzwerk gesendet.</translation>
-    </message>
-    <message>
-        <source>Pay To:</source>
-        <translation>Empfänger:</translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -2475,10 +2562,6 @@
 </context>
 <context>
     <name>TransactionDesc</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Offen für %n weiteren Block</numerusform><numerusform>Offen für %n weitere Blöcke</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>Offen bis %1</translation>
@@ -2523,10 +2606,6 @@
         <source>, has not been successfully broadcast yet</source>
         <translation>, wurde noch nicht erfolgreich übertragen</translation>
     </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, über %n Knoten übertragen</numerusform><numerusform>, über %n Knoten übertragen</numerusform></translation>
-    </message>
     <message>
         <source>Date</source>
         <translation>Datum</translation>
@@ -2566,10 +2645,6 @@
     <message>
         <source>Credit</source>
         <translation>Gutschrift</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>reift noch %n weiteren Block</numerusform><numerusform>reift noch %n weitere Blöcke</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -2673,10 +2748,6 @@
         <source>Label</source>
         <translation>Bezeichnung</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Offen für %n weiteren Block</numerusform><numerusform>Offen für %n weitere Blöcke</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>Offen bis %1</translation>
@@ -2773,7 +2844,7 @@
         <source>Amount removed from or added to balance.</source>
         <translation>Der Betrag, der dem Kontostand abgezogen oder hinzugefügt wurde.</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>TransactionView</name>
     <message>
@@ -3008,14 +3079,6 @@
         <translation>Kommandozeilen- und JSON-RPC-Befehle annehmen</translation>
     </message>
     <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect/-noconnect)</source>
-        <translation>Eingehende Verbindungen annehmen (Standard: 1, wenn nicht -proxy oder -connect/-noconnect)</translation>
-    </message>
-    <message>
-        <source>Connect only to the specified node(s); -noconnect or -connect=0 alone to disable automatic connections</source>
-        <translation>Verbindungen nur zu spezifizierten Node(s); verwenden Sie -noconnect oder -connect=0 alleine um automatische Verbindungen zu deaktivieren</translation>
-    </message>
-    <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>Veröffentlicht unter der MIT-Softwarelizenz, siehe beiliegende Datei %s oder %s.</translation>
     </message>
@@ -3082,10 +3145,6 @@
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Alle Wallet-Transaktionen löschen und nur diese Teilbereiche der Blockchain durch -rescan beim Starten wiederherstellen</translation>
-    </message>
-    <message>
-        <source>Error loading %s: You can't enable HD on a already existing non-HD wallet</source>
-        <translation>Fehler beim Laden von %s: Sie können HD nicht aktivieren da sie derzeit eine nicht HD Brieftasche besitzen.</translation>
     </message>
     <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
@@ -3268,10 +3327,6 @@
         <translation>Fehler beim Laden von %s: Die Wallet benötigt eine neuere Version von %s</translation>
     </message>
     <message>
-        <source>Error loading %s: You can't disable HD on a already existing HD wallet</source>
-        <translation>Fehler beim Laden von %s: Sie können die hierarchisch deterministische Schlüsselgeneration (HD) für eine bereits existierende HD-Brieftasche nicht deaktivieren</translation>
-    </message>
-    <message>
         <source>Error loading block database</source>
         <translation>Fehler beim Laden der Blockdatenbank</translation>
     </message>
@@ -3298,10 +3353,6 @@
     <message>
         <source>Initialization sanity check failed. %s is shutting down.</source>
         <translation>Initialisierungsplausibilitätsprüfung fehlgeschlagen. %s wird beendet.</translation>
-    </message>
-    <message>
-        <source>Invalid -onion address: '%s'</source>
-        <translation>Ungültige "-onion"-Adresse: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
@@ -3408,10 +3459,6 @@
         <translation>Verifiziere Blöcke...</translation>
     </message>
     <message>
-        <source>Verifying wallet...</source>
-        <translation>Verifiziere Wallet...</translation>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>Wallet %s liegt außerhalb des Datenverzeichnisses %s</translation>
     </message>
@@ -3434,10 +3481,6 @@
     <message>
         <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
         <translation>An die angegebene Adresse binden und Peers, die sich dorthin verbinden, immer zulassen. Für IPv6 "[Host]:Port"-Notation verwenden</translation>
-    </message>
-    <message>
-        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>An die angegebene Adresse binden und nach eingehenden JSON-RPC-Verbindungen abhören. Für IPv6 "[Host]:Port"-Notation verwenden. Kann mehrmals angegeben werden. (Standard: an alle Schnittstellen binden)</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -3474,10 +3517,6 @@
     <message>
         <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
         <translation>Zufällige Anmeldedaten für jede Proxyverbindung verwenden. Dies aktiviert Tor-Datenflussisolation (Standard: %u)</translation>
-    </message>
-    <message>
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation>Maximale Größe in Byte von "high-priority/low-fee"-Transaktionen festlegen (Standard: %d)</translation>
     </message>
     <message>
         <source>The transaction amount is too small to send after the fee has been deducted</source>
@@ -3558,10 +3597,6 @@
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Rückverfolgungs- und Debuginformationen an die Konsole senden, anstatt sie in debug.log zu schreiben</translation>
-    </message>
-    <message>
-        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation>Transaktionen, wenn möglich, als gebührenfreie Transaktion senden (Standard: %u)</translation>
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
@@ -3648,10 +3683,6 @@
         <translation>Erlaube DNS-Abfragen für -addnode, -seednode und -connect</translation>
     </message>
     <message>
-        <source>Loading addresses...</source>
-        <translation>Lade Adressen...</translation>
-    </message>
-    <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = TX-Metadaten wie z.B. Accountbesitzer und Zahlungsanforderungsinformationen behalten, 2 = TX-Metadaten verwerfen)</translation>
     </message>
@@ -3690,10 +3721,6 @@
     <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
         <translation>Debugging-Informationen ausgeben (Standard: %u, &lt;category&gt; anzugeben ist optional)</translation>
-    </message>
-    <message>
-        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</source>
-        <translation>Adressen von Peers via DNS-Namensauflösung finden, falls zu wenige Adressen verfügbar sind (Standard: 1, außer bei -connect/-noconnect)</translation>
     </message>
     <message>
         <source>Sets the serialization of raw transaction or block hex returned in non-verbose mode, non-segwit(0) or segwit(1) (default: %d)</source>
@@ -3754,10 +3781,6 @@
     <message>
         <source>Include IP addresses in debug output (default: %u)</source>
         <translation>IP-Adressen in Debugausgabe einschließen (Standard: %u)</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Ungültige Adresse in -proxy: '%s'</translation>
     </message>
     <message>
         <source>Keypool ran out, please call keypoolrefill first</source>

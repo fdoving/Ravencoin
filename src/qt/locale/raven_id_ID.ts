@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="id_ID">
+<TS language="id_ID" version="2.1">
 <context>
     <name>AddressBookPage</name>
     <message>
@@ -219,6 +217,18 @@
     </message>
 </context>
 <context>
+    <name>AssetControlDialog</name>
+    </context>
+<context>
+    <name>AssetTableModel</name>
+    </context>
+<context>
+    <name>AssetsDialog</name>
+    </context>
+<context>
+    <name>AssignQualifier</name>
+    </context>
+<context>
     <name>BanTableModel</name>
     <message>
         <source>IP/Netmask</source>
@@ -227,327 +237,6 @@
     <message>
         <source>Banned Until</source>
         <translation>Di banned sampai</translation>
-    </message>
-</context>
-<context>
-    <name>RavenGUI</name>
-    <message>
-        <source>Sign &amp;message...</source>
-        <translation>Pesan &amp;penanda...</translation>
-    </message>
-    <message>
-        <source>Synchronizing with network...</source>
-        <translation>Sinkronisasi dengan jaringan...</translation>
-    </message>
-    <message>
-        <source>&amp;Overview</source>
-        <translation>&amp;Kilasan</translation>
-    </message>
-    <message>
-        <source>Node</source>
-        <translation>Node</translation>
-    </message>
-    <message>
-        <source>Show general overview of wallet</source>
-        <translation>Tampilkan gambaran umum dompet Anda</translation>
-    </message>
-    <message>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Transaksi</translation>
-    </message>
-    <message>
-        <source>Browse transaction history</source>
-        <translation>Lihat riwayat transaksi</translation>
-    </message>
-    <message>
-        <source>E&amp;xit</source>
-        <translation>K&amp;eluar</translation>
-    </message>
-    <message>
-        <source>Quit application</source>
-        <translation>Keluar dari aplikasi</translation>
-    </message>
-    <message>
-        <source>&amp;About %1</source>
-        <translation>&amp;Tentang%1</translation>
-    </message>
-    <message>
-        <source>Show information about %1</source>
-        <translation>Tampilkan informasi perihal %1</translation>
-    </message>
-    <message>
-        <source>About &amp;Qt</source>
-        <translation>Mengenai &amp;Qt</translation>
-    </message>
-    <message>
-        <source>Show information about Qt</source>
-        <translation>Tampilkan informasi mengenai Qt</translation>
-    </message>
-    <message>
-        <source>&amp;Options...</source>
-        <translation>&amp;Pilihan...</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for %1</source>
-        <translation>Pengubahan opsi konfigurasi untuk %1</translation>
-    </message>
-    <message>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Enkripsi Dompet...</translation>
-    </message>
-    <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Cadangkan Dompet...</translation>
-    </message>
-    <message>
-        <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Ubah Kata Kunci...</translation>
-    </message>
-    <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Alamat-alamat untuk mengirim...</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Alamat-alamat untuk menerima...</translation>
-    </message>
-    <message>
-        <source>Open &amp;URI...</source>
-        <translation>Buka &amp;URI</translation>
-    </message>
-    <message>
-        <source>Click to disable network activity.</source>
-        <translation>Klik untuk menonaktifkan aktivitas jaringan.</translation>
-    </message>
-    <message>
-        <source>Network activity disabled.</source>
-        <translation>Aktivitas jaringan dinonaktifkan.</translation>
-    </message>
-    <message>
-        <source>Click to enable network activity again.</source>
-        <translation>Klik untuk mengaktifkan aktivitas jaringan lagi.</translation>
-    </message>
-    <message>
-        <source>Syncing Headers (%1%)...</source>
-        <translation>Menyinkronkan Header (%1%) ...</translation>
-    </message>
-    <message>
-        <source>Reindexing blocks on disk...</source>
-        <translation>Mengindex ulang blok di dalam disk...</translation>
-    </message>
-    <message>
-        <source>Send coins to a Raven address</source>
-        <translation>Kirim koin ke alamat Raven</translation>
-    </message>
-    <message>
-        <source>Backup wallet to another location</source>
-        <translation>Cadangkan dompet ke lokasi lain</translation>
-    </message>
-    <message>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>Ubah kata kunci yang digunakan untuk enkripsi dompet</translation>
-    </message>
-    <message>
-        <source>&amp;Debug window</source>
-        <translation>&amp;Jendela Debug</translation>
-    </message>
-    <message>
-        <source>Open debugging and diagnostic console</source>
-        <translation>Buka konsol debug dan diagnosa</translation>
-    </message>
-    <message>
-        <source>&amp;Verify message...</source>
-        <translation>&amp;Verifikasi pesan...</translation>
-    </message>
-    <message>
-        <source>Raven</source>
-        <translation>Raven</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Dompet</translation>
-    </message>
-    <message>
-        <source>&amp;Send</source>
-        <translation>&amp;Kirim</translation>
-    </message>
-    <message>
-        <source>&amp;Receive</source>
-        <translation>&amp;Menerima</translation>
-    </message>
-    <message>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Tampilkan / Sembunyikan</translation>
-    </message>
-    <message>
-        <source>Show or hide the main Window</source>
-        <translation>Tampilkan atau sembunyikan jendela utama</translation>
-    </message>
-    <message>
-        <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Enkripsi private key yang dimiliki dompet Anda</translation>
-    </message>
-    <message>
-        <source>Sign messages with your Raven addresses to prove you own them</source>
-        <translation>Tanda tangani sebuah pesan menggunakan alamat Raven Anda untuk membuktikan bahwa Anda adalah pemilik alamat tersebut</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Raven addresses</source>
-        <translation>Verifikasi pesan untuk memastikan bahwa pesan tersebut ditanda tangani oleh suatu alamat Raven tertentu</translation>
-    </message>
-    <message>
-        <source>&amp;File</source>
-        <translation>&amp;Berkas</translation>
-    </message>
-    <message>
-        <source>&amp;Settings</source>
-        <translation>&amp;Pengaturan</translation>
-    </message>
-    <message>
-        <source>&amp;Help</source>
-        <translation>&amp;Bantuan</translation>
-    </message>
-    <message>
-        <source>Tabs toolbar</source>
-        <translation>Baris tab</translation>
-    </message>
-    <message>
-        <source>Request payments (generates QR codes and raven: URIs)</source>
-        <translation>Permintaan pembayaran (membuat kode QR dan raven: URIs)</translation>
-    </message>
-    <message>
-        <source>Show the list of used sending addresses and labels</source>
-        <translation>Tampilkan daftar alamat dan label yang terkirim</translation>
-    </message>
-    <message>
-        <source>Show the list of used receiving addresses and labels</source>
-        <translation>Tampilkan daftar alamat dan label yang diterima</translation>
-    </message>
-    <message>
-        <source>Open a raven: URI or payment request</source>
-        <translation>Buka URI raven: atau permintaan pembayaran</translation>
-    </message>
-    <message>
-        <source>&amp;Command-line options</source>
-        <translation>&amp;pilihan Command-line</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Raven network</source>
-        <translation><numerusform>%n koneksi aktif ke jaringan Raven</numerusform></translation>
-    </message>
-    <message>
-        <source>Indexing blocks on disk...</source>
-        <translation>Pengindeksan blok pada disk ...</translation>
-    </message>
-    <message>
-        <source>Processing blocks on disk...</source>
-        <translation>Memproses blok pada disk ...</translation>
-    </message>
-    <message numerus="yes">
-        <source>Processed %n block(s) of transaction history.</source>
-        <translation><numerusform>%n blok dari riwayat transaksi diproses.</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>kurang %1</translation>
-    </message>
-    <message>
-        <source>Last received block was generated %1 ago.</source>
-        <translation>Blok terakhir yang diterima %1 lalu.</translation>
-    </message>
-    <message>
-        <source>Transactions after this will not yet be visible.</source>
-        <translation>Transaksi setelah ini belum akan terlihat.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Terjadi sebuah kesalahan</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Peringatan</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Informasi</translation>
-    </message>
-    <message>
-        <source>Up to date</source>
-        <translation>Terbaru</translation>
-    </message>
-    <message>
-        <source>Show the %1 help message to get a list with possible Raven command-line options</source>
-        <translation>Tampilkan %1 pesan bantuan untuk mendapatkan daftar opsi baris perintah Raven yang memungkinkan</translation>
-    </message>
-    <message>
-        <source>%1 client</source>
-        <translation>%1 klien</translation>
-    </message>
-    <message>
-        <source>Connecting to peers...</source>
-        <translation>Menghubungkan ke peer...</translation>
-    </message>
-    <message>
-        <source>Catching up...</source>
-        <translation>Menyusul...</translation>
-    </message>
-    <message>
-        <source>Date: %1
-</source>
-        <translation>Tanggal: %1
-</translation>
-    </message>
-    <message>
-        <source>Amount: %1
-</source>
-        <translation>Jumlah: %1
-</translation>
-    </message>
-    <message>
-        <source>Type: %1
-</source>
-        <translation>Tipe: %1
-</translation>
-    </message>
-    <message>
-        <source>Label: %1
-</source>
-        <translation>Label: %1
-</translation>
-    </message>
-    <message>
-        <source>Address: %1
-</source>
-        <translation>Alamat: %1
-</translation>
-    </message>
-    <message>
-        <source>Sent transaction</source>
-        <translation>Transaksi terkirim</translation>
-    </message>
-    <message>
-        <source>Incoming transaction</source>
-        <translation>Transaksi diterima</translation>
-    </message>
-    <message>
-        <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
-        <translation>Pembuatan kunci HD &lt;b&gt;diaktifkan&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation>Pembuatan kunci HD &lt;b&gt;dinonaktifkan&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Dompet saat ini &lt;b&gt;terenkripsi&lt;/b&gt; dan &lt;b&gt;terbuka&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Dompet saat ini &lt;b&gt;terenkripsi&lt;/b&gt; dan &lt;b&gt;terkunci&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>A fatal error occurred. Raven can no longer continue safely and will quit.</source>
-        <translation>Terjadi Kesalahan Fatal. Raven Tidak Dapat Melanjutkan Dengan Aman Dan Akan Keluar</translation>
     </message>
 </context>
 <context>
@@ -686,6 +375,9 @@
     </message>
     </context>
 <context>
+    <name>CreateAssetDialog</name>
+    </context>
+<context>
     <name>EditAddressDialog</name>
     <message>
         <source>Edit Address</source>
@@ -763,6 +455,12 @@
         <translation>Tidak bisa membuat direktori data disini.</translation>
     </message>
 </context>
+<context>
+    <name>FreezeAddress</name>
+    </context>
+<context>
+    <name>GUIUtil::SyncWarningMessage</name>
+    </context>
 <context>
     <name>HelpMessageDialog</name>
     <message>
@@ -848,15 +546,19 @@
         <source>Error</source>
         <translation>Kesalahan</translation>
     </message>
-    <message numerus="yes">
-        <source>%n GB of free space available</source>
-        <translation><numerusform>%n GB ruang kosong tersedia.</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>(of %n GB needed)</source>
-        <translation><numerusform>(dari %n GB yang dibutuhkan)</numerusform></translation>
-    </message>
-</context>
+    </context>
+<context>
+    <name>MnemonicDialog</name>
+    </context>
+<context>
+    <name>MnemonicDialog1</name>
+    </context>
+<context>
+    <name>MnemonicDialog2</name>
+    </context>
+<context>
+    <name>MnemonicDialog3</name>
+    </context>
 <context>
     <name>ModalOverlay</name>
     <message>
@@ -867,6 +569,9 @@
         <source>Last block time</source>
         <translation>Waktu blok terakhir</translation>
     </message>
+    </context>
+<context>
+    <name>MyRestrictedAssetsTableModel</name>
     </context>
 <context>
     <name>OpenURIDialog</name>
@@ -910,14 +615,6 @@
         <translation>Jumlah script &amp;verification threads</translation>
     </message>
     <message>
-        <source>Accept connections from outside</source>
-        <translation>Terima koneksi dari luar</translation>
-    </message>
-    <message>
-        <source>Allow incoming connections</source>
-        <translation>Perbolehkan koneksi masuk</translation>
-    </message>
-    <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Alamat IP proxy (cth. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
@@ -928,10 +625,6 @@
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>URL pihak ketika (misalnya sebuah block explorer) yang mumcul dalam tab transaksi sebagai konteks menu. %s dalam URL diganti dengan kode transaksi. URL dipisahkan dengan tanda vertikal |.</translation>
-    </message>
-    <message>
-        <source>Third party transaction URLs</source>
-        <translation>URL transaksi pihak ketiga</translation>
     </message>
     <message>
         <source>Active command-line options that override above options:</source>
@@ -1117,10 +810,6 @@
         <translation>Saldo ditambang yang masih terlalu muda</translation>
     </message>
     <message>
-        <source>Balances</source>
-        <translation>Saldo:</translation>
-    </message>
-    <message>
         <source>Total:</source>
         <translation>Jumlah:</translation>
     </message>
@@ -1253,10 +942,6 @@
         <translation>Kemacetan &amp;Jaringan </translation>
     </message>
     <message>
-        <source>&amp;Clear</source>
-        <translation>&amp;Kosongkan</translation>
-    </message>
-    <message>
         <source>Totals</source>
         <translation>Total</translation>
     </message>
@@ -1293,28 +978,8 @@
         <translation>1 &amp;tahun</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Gunakan panah keatas dan kebawah untuk menampilkan sejarah, dan &lt;b&gt;Ctrl-L&lt;/b&gt; untuk bersihkan layar.</translation>
-    </message>
-    <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Ketik &lt;b&gt;help&lt;/b&gt; untuk menampilkan perintah tersedia.</translation>
-    </message>
-    <message>
-        <source>%1 B</source>
-        <translation>%1 B</translation>
-    </message>
-    <message>
-        <source>%1 KB</source>
-        <translation>%1 KB</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 MB</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 GB</translation>
     </message>
     <message>
         <source>Yes</source>
@@ -1327,6 +992,307 @@
     <message>
         <source>Unknown</source>
         <translation>Tidak diketahui</translation>
+    </message>
+</context>
+<context>
+    <name>RavenGUI</name>
+    <message>
+        <source>Sign &amp;message...</source>
+        <translation>Pesan &amp;penanda...</translation>
+    </message>
+    <message>
+        <source>Synchronizing with network...</source>
+        <translation>Sinkronisasi dengan jaringan...</translation>
+    </message>
+    <message>
+        <source>&amp;Overview</source>
+        <translation>&amp;Kilasan</translation>
+    </message>
+    <message>
+        <source>Node</source>
+        <translation>Node</translation>
+    </message>
+    <message>
+        <source>Show general overview of wallet</source>
+        <translation>Tampilkan gambaran umum dompet Anda</translation>
+    </message>
+    <message>
+        <source>&amp;Transactions</source>
+        <translation>&amp;Transaksi</translation>
+    </message>
+    <message>
+        <source>Browse transaction history</source>
+        <translation>Lihat riwayat transaksi</translation>
+    </message>
+    <message>
+        <source>E&amp;xit</source>
+        <translation>K&amp;eluar</translation>
+    </message>
+    <message>
+        <source>Quit application</source>
+        <translation>Keluar dari aplikasi</translation>
+    </message>
+    <message>
+        <source>&amp;About %1</source>
+        <translation>&amp;Tentang%1</translation>
+    </message>
+    <message>
+        <source>Show information about %1</source>
+        <translation>Tampilkan informasi perihal %1</translation>
+    </message>
+    <message>
+        <source>About &amp;Qt</source>
+        <translation>Mengenai &amp;Qt</translation>
+    </message>
+    <message>
+        <source>Show information about Qt</source>
+        <translation>Tampilkan informasi mengenai Qt</translation>
+    </message>
+    <message>
+        <source>&amp;Options...</source>
+        <translation>&amp;Pilihan...</translation>
+    </message>
+    <message>
+        <source>Modify configuration options for %1</source>
+        <translation>Pengubahan opsi konfigurasi untuk %1</translation>
+    </message>
+    <message>
+        <source>&amp;Encrypt Wallet...</source>
+        <translation>&amp;Enkripsi Dompet...</translation>
+    </message>
+    <message>
+        <source>&amp;Backup Wallet...</source>
+        <translation>&amp;Cadangkan Dompet...</translation>
+    </message>
+    <message>
+        <source>&amp;Change Passphrase...</source>
+        <translation>&amp;Ubah Kata Kunci...</translation>
+    </message>
+    <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>&amp;Alamat-alamat untuk mengirim...</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>&amp;Alamat-alamat untuk menerima...</translation>
+    </message>
+    <message>
+        <source>Open &amp;URI...</source>
+        <translation>Buka &amp;URI</translation>
+    </message>
+    <message>
+        <source>Click to disable network activity.</source>
+        <translation>Klik untuk menonaktifkan aktivitas jaringan.</translation>
+    </message>
+    <message>
+        <source>Network activity disabled.</source>
+        <translation>Aktivitas jaringan dinonaktifkan.</translation>
+    </message>
+    <message>
+        <source>Click to enable network activity again.</source>
+        <translation>Klik untuk mengaktifkan aktivitas jaringan lagi.</translation>
+    </message>
+    <message>
+        <source>Syncing Headers (%1%)...</source>
+        <translation>Menyinkronkan Header (%1%) ...</translation>
+    </message>
+    <message>
+        <source>Reindexing blocks on disk...</source>
+        <translation>Mengindex ulang blok di dalam disk...</translation>
+    </message>
+    <message>
+        <source>Send coins to a Raven address</source>
+        <translation>Kirim koin ke alamat Raven</translation>
+    </message>
+    <message>
+        <source>Backup wallet to another location</source>
+        <translation>Cadangkan dompet ke lokasi lain</translation>
+    </message>
+    <message>
+        <source>Change the passphrase used for wallet encryption</source>
+        <translation>Ubah kata kunci yang digunakan untuk enkripsi dompet</translation>
+    </message>
+    <message>
+        <source>Open debugging and diagnostic console</source>
+        <translation>Buka konsol debug dan diagnosa</translation>
+    </message>
+    <message>
+        <source>&amp;Verify message...</source>
+        <translation>&amp;Verifikasi pesan...</translation>
+    </message>
+    <message>
+        <source>Raven</source>
+        <translation>Raven</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Dompet</translation>
+    </message>
+    <message>
+        <source>&amp;Send</source>
+        <translation>&amp;Kirim</translation>
+    </message>
+    <message>
+        <source>&amp;Receive</source>
+        <translation>&amp;Menerima</translation>
+    </message>
+    <message>
+        <source>&amp;Show / Hide</source>
+        <translation>&amp;Tampilkan / Sembunyikan</translation>
+    </message>
+    <message>
+        <source>Show or hide the main Window</source>
+        <translation>Tampilkan atau sembunyikan jendela utama</translation>
+    </message>
+    <message>
+        <source>Encrypt the private keys that belong to your wallet</source>
+        <translation>Enkripsi private key yang dimiliki dompet Anda</translation>
+    </message>
+    <message>
+        <source>Sign messages with your Raven addresses to prove you own them</source>
+        <translation>Tanda tangani sebuah pesan menggunakan alamat Raven Anda untuk membuktikan bahwa Anda adalah pemilik alamat tersebut</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Raven addresses</source>
+        <translation>Verifikasi pesan untuk memastikan bahwa pesan tersebut ditanda tangani oleh suatu alamat Raven tertentu</translation>
+    </message>
+    <message>
+        <source>&amp;File</source>
+        <translation>&amp;Berkas</translation>
+    </message>
+    <message>
+        <source>&amp;Help</source>
+        <translation>&amp;Bantuan</translation>
+    </message>
+    <message>
+        <source>Request payments (generates QR codes and raven: URIs)</source>
+        <translation>Permintaan pembayaran (membuat kode QR dan raven: URIs)</translation>
+    </message>
+    <message>
+        <source>Show the list of used sending addresses and labels</source>
+        <translation>Tampilkan daftar alamat dan label yang terkirim</translation>
+    </message>
+    <message>
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation>Tampilkan daftar alamat dan label yang diterima</translation>
+    </message>
+    <message>
+        <source>Open a raven: URI or payment request</source>
+        <translation>Buka URI raven: atau permintaan pembayaran</translation>
+    </message>
+    <message>
+        <source>&amp;Command-line options</source>
+        <translation>&amp;pilihan Command-line</translation>
+    </message>
+    <message>
+        <source>Indexing blocks on disk...</source>
+        <translation>Pengindeksan blok pada disk ...</translation>
+    </message>
+    <message>
+        <source>Processing blocks on disk...</source>
+        <translation>Memproses blok pada disk ...</translation>
+    </message>
+    <message>
+        <source>%1 behind</source>
+        <translation>kurang %1</translation>
+    </message>
+    <message>
+        <source>Last received block was generated %1 ago.</source>
+        <translation>Blok terakhir yang diterima %1 lalu.</translation>
+    </message>
+    <message>
+        <source>Transactions after this will not yet be visible.</source>
+        <translation>Transaksi setelah ini belum akan terlihat.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Terjadi sebuah kesalahan</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Peringatan</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Informasi</translation>
+    </message>
+    <message>
+        <source>Up to date</source>
+        <translation>Terbaru</translation>
+    </message>
+    <message>
+        <source>Show the %1 help message to get a list with possible Raven command-line options</source>
+        <translation>Tampilkan %1 pesan bantuan untuk mendapatkan daftar opsi baris perintah Raven yang memungkinkan</translation>
+    </message>
+    <message>
+        <source>%1 client</source>
+        <translation>%1 klien</translation>
+    </message>
+    <message>
+        <source>Connecting to peers...</source>
+        <translation>Menghubungkan ke peer...</translation>
+    </message>
+    <message>
+        <source>Catching up...</source>
+        <translation>Menyusul...</translation>
+    </message>
+    <message>
+        <source>Date: %1
+</source>
+        <translation>Tanggal: %1
+</translation>
+    </message>
+    <message>
+        <source>Amount: %1
+</source>
+        <translation>Jumlah: %1
+</translation>
+    </message>
+    <message>
+        <source>Type: %1
+</source>
+        <translation>Tipe: %1
+</translation>
+    </message>
+    <message>
+        <source>Label: %1
+</source>
+        <translation>Label: %1
+</translation>
+    </message>
+    <message>
+        <source>Address: %1
+</source>
+        <translation>Alamat: %1
+</translation>
+    </message>
+    <message>
+        <source>Sent transaction</source>
+        <translation>Transaksi terkirim</translation>
+    </message>
+    <message>
+        <source>Incoming transaction</source>
+        <translation>Transaksi diterima</translation>
+    </message>
+    <message>
+        <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
+        <translation>Pembuatan kunci HD &lt;b&gt;diaktifkan&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
+        <translation>Pembuatan kunci HD &lt;b&gt;dinonaktifkan&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <translation>Dompet saat ini &lt;b&gt;terenkripsi&lt;/b&gt; dan &lt;b&gt;terbuka&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <translation>Dompet saat ini &lt;b&gt;terenkripsi&lt;/b&gt; dan &lt;b&gt;terkunci&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>A fatal error occurred. Raven can no longer continue safely and will quit.</source>
+        <translation>Terjadi Kesalahan Fatal. Raven Tidak Dapat Melanjutkan Dengan Aman Dan Akan Keluar</translation>
     </message>
 </context>
 <context>
@@ -1443,6 +1409,15 @@
     </message>
     </context>
 <context>
+    <name>ReissueAssetDialog</name>
+    </context>
+<context>
+    <name>RestrictedAssetsDialog</name>
+    </context>
+<context>
+    <name>SendAssetsEntry</name>
+    </context>
+<context>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
@@ -1503,14 +1478,6 @@
     <message>
         <source>Recommended:</source>
         <translation>Disarankan</translation>
-    </message>
-    <message>
-        <source>normal</source>
-        <translation>normal</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>cepat</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -1622,10 +1589,6 @@
     <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation>Masukkan label untuk alamat ini untuk dimasukan dalam daftar alamat yang pernah digunakan</translation>
-    </message>
-    <message>
-        <source>Pay To:</source>
-        <translation>Kirim Ke:</translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -1878,10 +1841,6 @@
         <translation>Tidak bisa cari blok pertama, atau blok pertama salah. Salah direktori untuk jaringan?</translation>
     </message>
     <message>
-        <source>Invalid -onion address: '%s'</source>
-        <translation>Alamat -onion salah: '%s'</translation>
-    </message>
-    <message>
         <source>Not enough file descriptors available.</source>
         <translation>Deskripsi berkas tidak tersedia dengan cukup.</translation>
     </message>
@@ -1896,10 +1855,6 @@
     <message>
         <source>Verifying blocks...</source>
         <translation>Blok-blok sedang diverifikasi...</translation>
-    </message>
-    <message>
-        <source>Verifying wallet...</source>
-        <translation>Dompet sedang diverifikasi...</translation>
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>
@@ -1964,14 +1919,6 @@
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation>Izinkan peninjauan DNS untuk -addnote, -seednode dan -connect</translation>
-    </message>
-    <message>
-        <source>Loading addresses...</source>
-        <translation>Memuat alamat...</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Alamat -proxy salah: '%s'</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
