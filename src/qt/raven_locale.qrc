@@ -1,3 +1,5 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
         <file alias="af">locale/raven_af.qm</file>
         <file alias="af_ZA">locale/raven_af_ZA.qm</file>
         <file alias="ar">locale/raven_ar.qm</file>
@@ -83,3 +85,5 @@
         <file alias="zh_CN">locale/raven_zh_CN.qm</file>
         <file alias="zh_HK">locale/raven_zh_HK.qm</file>
         <file alias="zh_TW">locale/raven_zh_TW.qm</file>
+    </qresource>
+</RCC>
