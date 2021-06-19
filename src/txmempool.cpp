@@ -452,7 +452,7 @@ void CTxMemPool::addAddressIndex(const CTxMemPoolEntry &entry, const CCoinsViewC
                 uint160 hashBytes;
                 std::string assetName;
                 CAmount assetAmount;
-                int nScriptType;
+                int nScriptType{0};
                 if (ParseAssetScript(prevout.scriptPubKey,hashBytes, nScriptType, assetName, assetAmount)) {
                     if (nScriptType == TX_SCRIPTHASH) {
                         CMempoolAddressDeltaKey key(2, hashBytes, assetName, txhash, j, 1);

@@ -2424,9 +2424,9 @@ void CWallet::AvailableCoinsAll(std::vector<COutput>& vCoins, std::map<std::stri
 
             for (unsigned int i = 0; i < pcoin->tx->vout.size(); i++) {
 
-                int nType;
-                int nScriptType;
-                bool fIsOwner;
+                int nType{0};
+                int nScriptType{0};
+                bool fIsOwner{false};
                 bool isAssetScript = pcoin->tx->vout[i].scriptPubKey.IsAssetScript(nType, nScriptType, fIsOwner);
                 if (coinControl && !isAssetScript && coinControl->HasSelected() && !coinControl->fAllowOtherInputs && !coinControl->IsSelected(COutPoint((*it).first, i)))
                     continue;

@@ -4451,9 +4451,9 @@ void GetTxOutAssetTypes(const std::vector<CTxOut>& vout, int& issues, int& reiss
 }
 
 bool ParseAssetScript(CScript scriptPubKey, uint160 &hashBytes, int& nScriptType, std::string &assetName, CAmount &assetAmount) {
-    int nType;
-    bool fIsOwner;
-    int _nStartingPoint;
+    int nType{0};
+    bool fIsOwner{false};
+    int _nStartingPoint{0};
     std::string _strAddress;
     bool isAsset = false;
     if (scriptPubKey.IsAssetScript(nType, nScriptType, fIsOwner, _nStartingPoint)) {

@@ -1882,7 +1882,7 @@ static DisconnectResult DisconnectBlock(const CBlock& block, const CBlockIndex* 
                         std::string assetName;
                         CAmount assetAmount;
                         uint160 hashBytes;
-                        int nScriptType;
+                        int nScriptType{0};
 
                         if (ParseAssetScript(out.scriptPubKey, hashBytes, nScriptType, assetName, assetAmount)) {
 
@@ -2221,7 +2221,7 @@ static DisconnectResult DisconnectBlock(const CBlock& block, const CBlockIndex* 
                             std::string assetName;
                             CAmount assetAmount;
                             uint160 hashBytes;
-                            int nScriptType;
+                            int nScriptType{0};
 
                             if (ParseAssetScript(prevout.scriptPubKey, hashBytes, nScriptType, assetName, assetAmount)) {
                                 if (nScriptType == TX_PUBKEYHASH) {
@@ -2715,8 +2715,8 @@ static bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockInd
                         std::string assetName;
                         CAmount assetAmount;
                         uint160 hashBytes;
-                        int nScriptType;
-                        int addressType = 0;
+                        int nScriptType{0};
+                        int addressType{0};
 
                         if (ParseAssetScript(out.scriptPubKey, hashBytes, nScriptType, assetName, assetAmount)) {
                             if (nScriptType == TX_PUBKEYHASH) {
