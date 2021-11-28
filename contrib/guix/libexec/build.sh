@@ -169,6 +169,7 @@ fi
 CONFIGFLAGS="--enable-reduce-exports --disable-bench --disable-gui-tests"
 case "$HOST" in
     *linux*) CONFIGFLAGS+=" --enable-glibc-back-compat" ;;
+    *mingw*) CONFIGFLAGS+=" --enable-shared=no"
 esac
 
 # CFLAGS
@@ -214,16 +215,22 @@ export PATH="${BASEPREFIX}/${HOST}/native/bin:${PATH}"
     # Build Bitcoin Core
     make --jobs="$MAX_JOBS" ${V:+V=1}
 
-    # Perform basic ELF security checks on a series of executables.
-    make -C src --jobs=1 check-security ${V:+V=1}
-
+# RVN: TODO fix this for other hosts.
     case "$HOST" in
-        *linux*|*mingw*)
-            # Check that executables only contain allowed gcc, glibc and libstdc++
-            # version symbols for Linux distro back-compatibility.
-            make -C src --jobs=1 check-symbols  ${V:+V=1}
+        *linux*)
+            # Perform basic ELF security checks on a series of executables.
+            make -C src --jobs=1 check-security ${V:+V=1}
             ;;
     esac
+
+# RVN: TODO fix this.
+#    case "$HOST" in
+#        *linux*|*mingw*)
+#            # Check that executables only contain allowed gcc, glibc and libstdc++
+#            # version symbols for Linux distro back-compatibility.
+#            make -C src --jobs=1 check-symbols  ${V:+V=1}
+#            ;;
+#    esac
 
     # Make the os-specific installers
     case "$HOST" in
@@ -237,7 +244,7 @@ export PATH="${BASEPREFIX}/${HOST}/native/bin:${PATH}"
     # binary tarballs.
     INSTALLPATH="${PWD}/installed/${DISTNAME}"
     mkdir -p "${INSTALLPATH}"
-    # Install built Bitcoin Core to $INSTALLPATH
+    # Install built Raven Core to $INSTALLPATH
     make install DESTDIR="${INSTALLPATH}" ${V:+V=1}
 
     (
@@ -245,7 +252,7 @@ export PATH="${BASEPREFIX}/${HOST}/native/bin:${PATH}"
 
         case "$HOST" in
             *mingw*)
-                mv --target-directory="$DISTNAME"/lib/ "$DISTNAME"/bin/*.dll
+#                mv --target-directory="$DISTNAME"/lib/ "$DISTNAME"/bin/*.dll
                 ;;
         esac
 
