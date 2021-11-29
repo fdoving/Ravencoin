@@ -32,7 +32,7 @@ public:
     explicit AmountSpinBox(QWidget *parent):
         QAbstractSpinBox(parent),
         currentUnit(RavenUnits::RVN),
-        singleStep(100000), // satoshis
+        singleStep(100000000), // satoshis
         assetUnit(-1)
     {
         setAlignment(Qt::AlignRight);
