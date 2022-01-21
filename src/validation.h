@@ -495,13 +495,13 @@ bool ResetBlockFailureFlags(CBlockIndex *pindex);
 extern CChain chainActive;
 
 /** Global variable that points to the coins database (protected by cs_main) */
-extern CCoinsViewDB *pcoinsdbview;
+extern std::unique_ptr<CCoinsViewDB> pcoinsdbview;
 
 /** Global variable that points to the active CCoinsView (protected by cs_main) */
-extern CCoinsViewCache *pcoinsTip;
+extern std::unique_ptr<CCoinsViewCache> pcoinsTip;
 
 /** Global variable that points to the active block tree (protected by cs_main) */
-extern CBlockTreeDB *pblocktree;
+extern std::unique_ptr<CBlockTreeDB> pblocktree;
 
 /** RVN START */
 
@@ -598,6 +598,8 @@ bool AreRestrictedAssetsDeployed();
 bool AreEnforcedValuesDeployed();
 
 bool AreCoinbaseCheckAssetsDeployed();
+
+bool AreP2SHAssetsAllowed();
 
 // Only used by test framework
 void SetEnforcedValues(bool value);

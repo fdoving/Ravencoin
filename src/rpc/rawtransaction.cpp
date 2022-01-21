@@ -12,6 +12,7 @@
 #include "init.h"
 #include "keystore.h"
 #include "validation.h"
+#include "validationinterface.h"
 #include "merkleblock.h"
 #include "net.h"
 #include "policy/policy.h"
@@ -31,6 +32,7 @@
 #include "wallet/wallet.h"
 #endif
 
+#include <future>
 #include <stdint.h>
 #include "assets/assets.h"
 
@@ -271,7 +273,7 @@ UniValue gettxoutproof(const JSONRPCRequest& request)
     } else {
         // Loop through txids and try to find which block they're in. Exit loop once a block is found.
         for (const auto& tx : setTxids) {
-            const Coin& coin = AccessByTxid(*pcoinsTip, tx);
+            const Coin& coin = AccessByTxid(pcoinsTip.get(), tx);
             if (!coin.IsSpent()) {
                 pblockindex = chainActive[coin.nHeight];
                 break;
@@ -970,54 +972,52 @@ UniValue createrawtransaction(const JSONRPCRequest& request)
                                 "Invalid parameter, the format must follow { \"transferwithmessage\": {\"asset_name\": amount, \"message\": messagehash, \"expire_time\": utc_time} }"));
 
                     UniValue transferData = asset_.getValues()[0].get_obj();
-
                     auto keys = transferData.getKeys();
 
                     if (keys.size() == 0)
                         throw JSONRPCError(RPC_INVALID_PARAMETER, std::string(
                                 "Invalid parameter, the format must follow { \"transferwithmessage\": {\"asset_name\": amount, \"message\": messagehash, \"expire_time\": utc_time} }"));
 
-                    UniValue asset_quantity;
                     std::string asset_name = keys[0];
 
-                    if (!IsAssetNameValid(asset_name)) {
+                    if (!IsAssetNameValid(asset_name)) 
                         throw JSONRPCError(RPC_INVALID_PARAMETER,
                                            "Invalid parameter, missing valid asset name to transferwithmessage");
 
-                        const UniValue &asset_quantity = find_value(transferData, asset_name);
-                        if (!asset_quantity.isNum())
-                            throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, missing or invalid quantity");
+                    const UniValue &asset_quantity = find_value(transferData, asset_name);
+                    if (!asset_quantity.isNum())
+                        throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, missing or invalid quantity");
 
-                        const UniValue &message = find_value(transferData, "message");
-                        if (!message.isStr())
-                            throw JSONRPCError(RPC_INVALID_PARAMETER,
-                                               "Invalid parameter, missing reissue data for key: message");
+                    const UniValue &message = find_value(transferData, "message");
+                    if (!message.isStr())
+                        throw JSONRPCError(RPC_INVALID_PARAMETER,
+                                           "Invalid parameter, missing reissue data for key: message");
 
-                        const UniValue &expire_time = find_value(transferData, "expire_time");
-                        if (!expire_time.isNum())
-                            throw JSONRPCError(RPC_INVALID_PARAMETER,
-                                               "Invalid parameter, missing reissue data for key: expire_time");
+                    const UniValue &expire_time = find_value(transferData, "expire_time");
+                    if (!expire_time.isNum())
+                        throw JSONRPCError(RPC_INVALID_PARAMETER,
+                                           "Invalid parameter, missing reissue data for key: expire_time");
 
-                        CAmount nAmount = AmountFromValue(asset_quantity);
+                    CAmount nAmount = AmountFromValue(asset_quantity);
 
-                        // Create a new transfer
-                        CAssetTransfer transfer(asset_name, nAmount, DecodeAssetData(message.get_str()),
+                    // Create a new transfer
+                    CAssetTransfer transfer(asset_name, nAmount, DecodeAssetData(message.get_str()),
                                                 expire_time.get_int64());
 
-                        // Verify
-                        std::string strError = "";
-                        if (!transfer.IsValid(strError)) {
-                            throw JSONRPCError(RPC_INVALID_PARAMETER, strError);
-                        }
-
-                        // Construct transaction
-                        CScript scriptPubKey = GetScriptForDestination(destination);
-                        transfer.ConstructTransaction(scriptPubKey);
-
-                        // Push into vouts
-                        CTxOut out(0, scriptPubKey);
-                        rawTx.vout.push_back(out);
+                    // Verify
+                    std::string strError = "";
+                    if (!transfer.IsValid(strError)) {
+                        throw JSONRPCError(RPC_INVALID_PARAMETER, strError);
                     }
+
+                    // Construct transaction
+                    CScript scriptPubKey = GetScriptForDestination(destination);
+                    transfer.ConstructTransaction(scriptPubKey);
+
+                    // Push into vouts
+                    CTxOut out(0, scriptPubKey);
+                    rawTx.vout.push_back(out);
+                    
                 } else if (assetKey_ == "issue_restricted") {
                     if (asset_[0].type() != UniValue::VOBJ)
                         throw JSONRPCError(RPC_INVALID_PARAMETER, std::string("Invalid parameter, the format must follow { \"issue_restricted\": {\"key\": value}, ...}"));
@@ -1753,7 +1753,7 @@ UniValue combinerawtransaction(const JSONRPCRequest& request)
     {
         LOCK(cs_main);
         LOCK(mempool.cs);
-        CCoinsViewCache &viewChain = *pcoinsTip;
+        CCoinsViewCache viewChain(pcoinsTip.get());
         CCoinsViewMemPool viewMempool(&viewChain, mempool);
         view.SetBackend(viewMempool); // temporarily switch cache backend to db+mempool view
 
@@ -1874,7 +1874,7 @@ UniValue signrawtransaction(const JSONRPCRequest& request)
     CCoinsViewCache view(&viewDummy);
     {
         LOCK(mempool.cs);
-        CCoinsViewCache &viewChain = *pcoinsTip;
+        CCoinsViewCache viewChain(pcoinsTip.get());
         CCoinsViewMemPool viewMempool(&viewChain, mempool);
         view.SetBackend(viewMempool); // temporarily switch cache backend to db+mempool view
 
@@ -1955,7 +1955,7 @@ UniValue signrawtransaction(const JSONRPCRequest& request)
 
             // if redeemScript given and not using the local wallet (private keys
             // given), add redeemScript to the tempKeystore so it can be signed:
-            if (fGivenKeys && (scriptPubKey.IsPayToScriptHash() || scriptPubKey.IsPayToWitnessScriptHash())) {
+            if (fGivenKeys && (scriptPubKey.IsPayToScriptHash() || scriptPubKey.IsPayToWitnessScriptHash() || scriptPubKey.IsP2SHAssetScript())) {
                 RPCTypeCheckObj(prevOut,
                     {
                         {"txid", UniValueType(UniValue::VSTR)},
@@ -2069,7 +2069,9 @@ UniValue sendrawtransaction(const JSONRPCRequest& request)
         );
 
     ObserveSafeMode();
-    LOCK(cs_main);
+
+    std::promise<void> promise;
+
     RPCTypeCheck(request.params, {UniValue::VSTR, UniValue::VBOOL});
 
     // parse hex string from parameter
@@ -2083,7 +2085,9 @@ UniValue sendrawtransaction(const JSONRPCRequest& request)
     if (!request.params[1].isNull() && request.params[1].get_bool())
         nMaxRawTxFee = 0;
 
-    CCoinsViewCache &view = *pcoinsTip;
+    { // cs_main scope
+    LOCK(cs_main);
+    CCoinsViewCache view(pcoinsTip.get());
     bool fHaveChain = false;
     for (size_t o = 0; !fHaveChain && o < tx->vout.size(); o++) {
         const Coin& existingCoin = view.AccessCoin(COutPoint(hashTx, o));
@@ -2104,10 +2108,24 @@ UniValue sendrawtransaction(const JSONRPCRequest& request)
                 }
                 throw JSONRPCError(RPC_TRANSACTION_ERROR, state.GetRejectReason());
             }
+        } else {
+            // If wallet is enabled, ensure that the wallet has been made aware
+            // of the new transaction prior to returning. This prevents a race
+            // where a user might call sendrawtransaction with a transaction
+            // to/from their wallet, immediately call some wallet RPC, and get
+            // a stale result because callbacks have not yet been processed.
+            CallFunctionInValidationInterfaceQueue([&promise] {
+                promise.set_value();
+            });
         }
     } else if (fHaveChain) {
         throw JSONRPCError(RPC_TRANSACTION_ALREADY_IN_CHAIN, "transaction already in block chain");
     }
+
+    } // cs_main
+
+    promise.get_future().wait();
+
     if(!g_connman)
         throw JSONRPCError(RPC_CLIENT_P2P_DISABLED, "Error: Peer-to-peer functionality missing or disabled");
 
@@ -2116,6 +2134,7 @@ UniValue sendrawtransaction(const JSONRPCRequest& request)
     {
         pnode->PushInventory(inv);
     });
+
     return hashTx.GetHex();
 }
 
